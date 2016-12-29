@@ -1,0 +1,23 @@
+h1 Listing hubs
+
+table
+  thead
+    tr
+      th Name
+      th Percent fee
+      th
+      th
+      th
+
+  tbody
+    - @hubs.each do |hub|
+      tr
+        td = hub.name
+        td = hub.percent_fee
+        td = link_to 'Show', hub
+        td = link_to 'Edit', edit_hub_path(hub)
+        td = link_to 'Destroy', hub, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Hub', new_hub_path

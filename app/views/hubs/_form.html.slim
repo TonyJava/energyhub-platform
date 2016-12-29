@@ -1,0 +1,15 @@
+= form_for @hub do |f|
+  - if @hub.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@hub.errors.count, "error")} prohibited this hub from being saved:"
+      ul
+        - @hub.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :percent_fee
+    = f.text_field :percent_fee
+  .actions = f.submit

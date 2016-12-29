@@ -1,0 +1,30 @@
+p#notice = notice
+
+p
+  strong Hub:
+  = @participant.hub_id
+p
+  strong First name:
+  = @participant.first_name
+p
+  strong Last name:
+  = @participant.last_name
+p
+  strong Email:
+  = @participant.email
+p
+  strong Phone:
+  = @participant.phone
+p
+  strong Organization:
+  = @participant.organization
+p
+  strong Title:
+  = @participant.title
+p
+  strong Notes:
+  = @participant.notes
+
+= link_to 'Edit', edit_participant_path(@participant)
+'|
+= link_to 'Back', participants_path

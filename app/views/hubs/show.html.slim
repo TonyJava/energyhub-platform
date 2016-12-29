@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @hub.name
+p
+  strong Percent fee:
+  = @hub.percent_fee
+
+= link_to 'Edit', edit_hub_path(@hub)
+'|
+= link_to 'Back', hubs_path
