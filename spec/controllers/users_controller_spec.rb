@@ -16,7 +16,7 @@ RSpec.describe UsersController, type: :controller do
 
     it "assigns all users as @users" do
       get :index, params: {}
-      expect(assigns(:users)).to eq([user])
+      expect(assigns(:users)).to eq(User.all)
     end
   end
 
