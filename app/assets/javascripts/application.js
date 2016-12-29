@@ -11,6 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+// require jquery-ui
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks
+//= require bootstrap
+//= require select2
+//= require homer
 //= require_tree .
