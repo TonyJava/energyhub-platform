@@ -5,11 +5,13 @@
       ul
         - @hub.errors.full_messages.each do |message|
           li = message
-
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :percent_fee
-    = f.text_field :percent_fee
-  .actions = f.submit
+  .row 
+    .col-md-8
+      .form-group
+        = f.label :name
+        = f.text_field :name, class: "form-control"
+      .form-group
+        = f.label :percent_fee, "Percent Fee"
+        = f.text_field :percent_fee, class: "form-control"
+      .actions 
+        = f.submit class: "btn btn-primary"

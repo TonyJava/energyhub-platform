@@ -1,25 +1,20 @@
 class ParticipantsController < ApplicationController
   before_action :set_participant, only: [:show, :edit, :update, :destroy]
 
-  # GET /participants
   def index
     @participants = Participant.all
   end
 
-  # GET /participants/1
   def show
   end
 
-  # GET /participants/new
   def new
     @participant = Participant.new
   end
 
-  # GET /participants/1/edit
   def edit
   end
 
-  # POST /participants
   def create
     @participant = Participant.new(participant_params)
 

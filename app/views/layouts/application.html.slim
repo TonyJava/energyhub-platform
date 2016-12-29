@@ -2,46 +2,31 @@ doctype html
 html
   = render 'partials/head'
   body
-		
-		<!-- Header -->
 		#header
 			.color-line
 			#logo class="light-version"
 				span Energy Hub Platform
-				nav role="navigation"
-	        .navbar-right
-	        	ul.nav.navbar-nav.no-borders
-	        		- if user_signed_in? 
-								li Logged in as <strong>#{current_user.email}</strong>
-								li= link_to 'Edit profile', edit_user_registration_path  
-								li= link_to "Logout", destroy_user_session_path, method: :delete 
-								li= link_to "Sign up", new_user_registration_path  
-								li= link_to "Login", new_user_session_path 
-
-		<!-- Navigation -->
+			nav role="navigation"
+				.navbar-right
+        	ul.nav.navbar-nav.no-borders.pull-right
+						li= link_to "Edit #{current_user.email}", edit_user_registration_path 
+						li= link_to "Logout", destroy_user_session_path, method: :delete 
 		aside id="menu"
 			#navigation
 				ul.nav id="side-menu"
-					li <a href="index.html"> <span class="nav-label">Dashboard</span> <span class="label label-success pull-right">v.1</span> </a>
-					li <a href="analytics.html"> <span class="nav-label">Analytics</span><span class="label label-warning pull-right">NEW</span> </a>
-					li
-						<a href="#"><span class='nav-label'>App views</span><span class='fa arrow'></span> </a>
-						ul.nav.nav-second-level
-							li link
-							li link
-					li 
-						<a href="#"><span class='nav-label'>App views</span><span class='fa arrow'></span> </a>
-						ul.nav.nav-second-level
-							li link
-							li link
-
-
-		<!-- Main Wrapper -->
+					<li>
+						=link_to "Hubs", hubs_path
+					</li>
+					<li>
+						=link_to "Participants", participants_path
+					</li>
+					<li>
+						=link_to "Users", users_path
+					</li>
 		#wrapper
 			.content.animate-panel
 				= yield
-
-		    <!-- Footer-->
 				footer.footer
 					span.pull-right Eutectics 2017
+
 

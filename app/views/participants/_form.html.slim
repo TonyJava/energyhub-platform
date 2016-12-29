@@ -6,28 +6,30 @@
         - @participant.errors.full_messages.each do |message|
           li = message
 
-  .field
-    = f.label :hub_id
-    = f.number_field :hub_id
-  .field
-    = f.label :first_name
-    = f.text_field :first_name
-  .field
-    = f.label :last_name
-    = f.text_field :last_name
-  .field
-    = f.label :email
-    = f.text_field :email
-  .field
-    = f.label :phone
-    = f.text_field :phone
-  .field
-    = f.label :organization
-    = f.text_field :organization
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
-    = f.label :notes
-    = f.text_area :notes
-  .actions = f.submit
+  .row 
+    .col-md-8
+      .form-group
+        = f.label :hub_id
+        = f.number_field :hub_id, class: "form-control"
+      .form-group
+        = f.label :first_name
+        = f.text_field :first_name, class: "form-control"
+      .form-group
+        = f.label :last_name
+        = f.text_field :last_name, class: "form-control"
+      .form-group
+        = f.label :email
+        = f.text_field :email, class: "form-control"
+      .form-group
+        = f.label :phone
+        = f.text_field :phone, class: "form-control"
+      .form-group
+        = f.label :organization
+        = f.text_field :organization, class: "form-control"
+      .form-group
+        = f.label :title
+        = f.text_field :title, class: "form-control"
+      .form-group
+        = f.label :notes
+        = f.text_area :notes, class: "form-control"
+      .actions = f.submit class: "btn btn-primary"
