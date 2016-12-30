@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :projects
+  resources :sites
   resources :participants
   resources :hubs
   root to: 'pages#home'

@@ -1,0 +1,42 @@
+p#notice = notice
+
+p
+  strong Hub:
+  = @project.hub_id
+p
+  strong Site:
+  = @project.site_id
+p
+  strong Project status:
+  = @project.project_status
+p
+  strong Intake path:
+  = @project.intake_path
+p
+  strong Name:
+  = @project.name
+p
+  strong Project type:
+  = @project.project_type
+p
+  strong Estimated annual production:
+  = @project.estimated_annual_production
+p
+  strong Estimated annual savings:
+  = @project.estimated_annual_savings
+p
+  strong Total project cost:
+  = @project.total_project_cost
+p
+  strong Fee invoice sent:
+  = @project.fee_invoice_sent
+p
+  strong Fee received:
+  = @project.fee_received
+p
+  strong Notes:
+  = @project.notes
+
+= link_to 'Edit', edit_project_path(@project)
+'|
+= link_to 'Back', projects_path

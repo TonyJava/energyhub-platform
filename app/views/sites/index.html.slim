@@ -1,0 +1,33 @@
+h1 Listing sites
+
+table
+  thead
+    tr
+      th Address 1
+      th Address 2
+      th City
+      th State
+      th Zip code
+      th Property type
+      th Participant
+      th
+      th
+      th
+
+  tbody
+    - @sites.each do |site|
+      tr
+        td = site.address_1
+        td = site.address_2
+        td = site.city
+        td = site.state
+        td = site.zip_code
+        td = site.property_type
+        td = site.participant_id
+        td = link_to 'Show', site
+        td = link_to 'Edit', edit_site_path(site)
+        td = link_to 'Destroy', site, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Site', new_site_path

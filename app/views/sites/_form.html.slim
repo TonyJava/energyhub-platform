@@ -1,0 +1,30 @@
+= form_for @site do |f|
+  - if @site.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@site.errors.count, "error")} prohibited this site from being saved:"
+      ul
+        - @site.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :address_1
+    = f.text_field :address_1
+  .field
+    = f.label :address_2
+    = f.text_field :address_2
+  .field
+    = f.label :city
+    = f.text_field :city
+  .field
+    = f.label :state
+    = f.text_field :state
+  .field
+    = f.label :zip_code
+    = f.text_field :zip_code
+  .field
+    = f.label :property_type
+    = f.text_field :property_type
+  .field
+    = f.label :participant_id
+    = f.text_field :participant_id
+  .actions = f.submit

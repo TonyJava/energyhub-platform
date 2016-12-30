@@ -1,0 +1,27 @@
+p#notice = notice
+
+p
+  strong Address 1:
+  = @site.address_1
+p
+  strong Address 2:
+  = @site.address_2
+p
+  strong City:
+  = @site.city
+p
+  strong State:
+  = @site.state
+p
+  strong Zip code:
+  = @site.zip_code
+p
+  strong Property type:
+  = @site.property_type
+p
+  strong Participant:
+  = @site.participant_id
+
+= link_to 'Edit', edit_site_path(@site)
+'|
+= link_to 'Back', sites_path
