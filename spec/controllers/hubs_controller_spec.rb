@@ -3,6 +3,13 @@ require 'rails_helper'
 RSpec.describe HubsController, type: :controller do
   let(:user) { create(:user) }
   let(:hub) { create(:hub) }
+  let(:participant) { create(:participant, hub_id: hub.id) }
+  let(:participant2) { create(:participant, hub_id: hub.id) }
+  let(:site1) { create(:site, participant_id: participant.id) }
+  let(:site2) { create(:site, participant_id: participant.id) }
+  let(:project) { site1.projects.create(FactoryGirl.build(:project).attributes) }
+  let(:project2) { site1.projects.create(FactoryGirl.build(:project, name: "Solar Parking Shade Structure").attributes) }
+
   let(:valid_attributes) {
     FactoryGirl.build(:hub).attributes
   }
@@ -26,12 +33,28 @@ RSpec.describe HubsController, type: :controller do
   describe "GET #show" do
     before(:each) do
       sign_in user
-      hub
+      project
+      project2
     end
 
     it "assigns the requested hub as @hub" do
       get :show, params: {id: hub.to_param}
       expect(assigns(:hub)).to eq(hub)
+    end
+
+    it "assigns the requested hub's projects as @projects" do
+      get :show, params: {id: hub.to_param}
+      expect(assigns(:projects)).to eq(hub.projects)
+    end
+
+    it "assigns the requested hub's participants as @particpants" do
+      get :show, params: {id: hub.to_param}
+      expect(assigns(:participants)).to eq(hub.participants)
+    end
+
+    it "assigns the requested hub's sites as @site's" do
+      get :show, params: {id: hub.to_param}
+      expect(assigns(:sites)).to eq(hub.sites)
     end
   end
 

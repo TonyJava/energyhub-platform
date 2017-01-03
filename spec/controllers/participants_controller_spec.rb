@@ -2,7 +2,13 @@ require 'rails_helper'
 
 RSpec.describe ParticipantsController, type: :controller do
   let(:user) { create(:user) }
-  let(:participant) { create(:participant) }
+  let(:hub) { create(:hub) }
+  let(:participant) { create(:participant, hub_id: hub.id) }
+  let(:participant2) { create(:participant, hub_id: hub.id) }
+  let(:site1) { create(:site, participant_id: participant.id) }
+  let(:site2) { create(:site, participant_id: participant.id) }
+  let(:project) { site1.projects.create(FactoryGirl.build(:project).attributes) }
+  let(:project2) { site1.projects.create(FactoryGirl.build(:project, name: "Solar Parking Shade Structure").attributes) }
   let(:valid_attributes) {
     FactoryGirl.build(:participant).attributes
   }
@@ -28,6 +34,16 @@ RSpec.describe ParticipantsController, type: :controller do
     it "assigns the requested participant as @participant" do
       get :show, params: {id: participant.to_param}
       expect(assigns(:participant)).to eq(participant)
+    end
+
+    it "assigns the requested participant's projects as @projects" do
+      get :show, params: {id: participant.to_param}
+      expect(assigns(:projects)).to eq(participant.projects)
+    end
+
+    it "assigns the requested participant's sites as @sites" do
+      get :show, params: {id: participant.to_param}
+      expect(assigns(:sites)).to eq(participant.sites)
     end
   end
 

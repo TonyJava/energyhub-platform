@@ -2,7 +2,13 @@ require 'rails_helper'
 
 RSpec.describe SitesController, type: :controller do
   let(:user) { create(:user) }
-  let(:site) { create(:site) }
+  let(:hub) { create(:hub) }
+  let(:participant) { create(:participant, hub_id: hub.id) }
+  let(:participant2) { create(:participant, hub_id: hub.id) }
+  let(:site) { create(:site, participant_id: participant.id) }
+  let(:site2) { create(:site, participant_id: participant.id) }
+  let(:project) { site.projects.create(FactoryGirl.build(:project).attributes) }
+  let(:project2) { site.projects.create(FactoryGirl.build(:project, name: "Solar Parking Shade Structure").attributes) }
   let(:valid_attributes) {
     FactoryGirl.build(:site).attributes
   }
@@ -25,12 +31,18 @@ RSpec.describe SitesController, type: :controller do
   describe "GET #show" do
     before(:each) do
       sign_in user
-      site
+      project
+      project2
     end
 
     it "assigns the requested site as @site" do
       get :show, params: {id: site.to_param}
       expect(assigns(:site)).to eq(site)
+    end
+
+    it "assigns the requested site's projects as @projects" do
+      get :show, params: {id: site.to_param}
+      expect(assigns(:projects)).to eq(site.projects)
     end
   end
 
