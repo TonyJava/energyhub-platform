@@ -1,12 +1,19 @@
 p#notice = notice
+h1= @hub.name
+.row
+  .col-md-12
+    .hpanel
+      .panel-body
+        table.table.table-bordered.table-striped
+          tr
+            td Percent Fee
+            td= @hub.percent_fee
+        = link_to 'Edit', edit_hub_path(@hub)
+        '|
+        = link_to 'Back', hubs_path
 
-p
-  strong Name:
-  = @hub.name
-p
-  strong Percent fee:
-  = @hub.percent_fee
+== render 'projects/projects', projects: @projects
 
-= link_to 'Edit', edit_hub_path(@hub)
-'|
-= link_to 'Back', hubs_path
+== render 'participants/participants', participants: @participants
+
+== render 'sites/sites', sites: @sites

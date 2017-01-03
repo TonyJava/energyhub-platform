@@ -1,42 +1,47 @@
 p#notice = notice
+h1= @project.name
+.row
+  .col-md-12
+    .hpanel
+      .panel-body
+        table.table.table-bordered.table-striped
+          tr
+            td Hub:
+            td= link_to @project.hub.try(:name), hub_path(id: @project.hub.id)
+          tr
+            td Sites:
+            td= @project.sites.map { |site| link_to site.name, site_path(id: site.id) }.join(', ').html_safe
+          tr
+            td Project Status:
+            td= @project.project_status
+          tr
+            td Intake Path:
+            td= @project.intake_path
+          tr
+            td Name:
+            td= @project.name
+          tr
+            td Project type:
+            td= @project.project_type
+          tr
+            td Estimated annual production:
+            td= @project.estimated_annual_production
+          tr
+            td Estimated annual savings:
+            td= @project.estimated_annual_savings
+          tr
+            td Total project cost:
+            td= @project.total_project_cost
+          tr
+            td Fee invoice sent:
+            td= @project.fee_invoice_sent
+          tr
+            td Fee received:
+            td= @project.fee_received
+          tr
+            td Notes:
+            td= @project.notes
 
-p
-  strong Hub:
-  = @project.hub_id
-p
-  strong Site:
-  = @project.site_id
-p
-  strong Project status:
-  = @project.project_status
-p
-  strong Intake path:
-  = @project.intake_path
-p
-  strong Name:
-  = @project.name
-p
-  strong Project type:
-  = @project.project_type
-p
-  strong Estimated annual production:
-  = @project.estimated_annual_production
-p
-  strong Estimated annual savings:
-  = @project.estimated_annual_savings
-p
-  strong Total project cost:
-  = @project.total_project_cost
-p
-  strong Fee invoice sent:
-  = @project.fee_invoice_sent
-p
-  strong Fee received:
-  = @project.fee_received
-p
-  strong Notes:
-  = @project.notes
-
-= link_to 'Edit', edit_project_path(@project)
-'|
-= link_to 'Back', projects_path
+        = link_to 'Edit', edit_project_path(@project)
+        '|
+        = link_to 'Back', projects_path

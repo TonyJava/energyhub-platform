@@ -1,0 +1,8 @@
+tr
+  td = link_to project.hub.try(:name), hub_path(id: project.hub.try(:id))
+  td = project.sites.map { |site| link_to site.name, site_path(id: site.id) }.join(', ').html_safe
+  td = project.project_status
+  td = project.intake_path
+  td = project.project_type
+  td = link_to 'Show', project
+  td = link_to 'Destroy', project, data: { confirm: 'Are you sure?' }, method: :delete

@@ -1,30 +1,36 @@
 p#notice = notice
+h1= @participant.full_name
+.row
+  .col-md-12
+    .hpanel
+      .panel-body
+        table.table.table-bordered.table-striped
+          tr
+            td Hub:
+            td = link_to @participant.hub.try(:name), hub_path(id: @participant.hub_id)
+          tr
+            td Name:
+            td = @participant.full_name
+          tr
+            td Email:
+            td = @participant.email
+          tr
+            td Phone:
+            td = @participant.phone
+          tr
+            td Organization:
+            td = @participant.organization
+          tr
+            td Title:
+            td = @participant.title
+          tr
+            td Notes:
+            td = @participant.notes
 
-p
-  strong Hub:
-  = @participant.hub_id
-p
-  strong First name:
-  = @participant.first_name
-p
-  strong Last name:
-  = @participant.last_name
-p
-  strong Email:
-  = @participant.email
-p
-  strong Phone:
-  = @participant.phone
-p
-  strong Organization:
-  = @participant.organization
-p
-  strong Title:
-  = @participant.title
-p
-  strong Notes:
-  = @participant.notes
+        = link_to 'Edit', edit_participant_path(@participant)
+        '|
+        = link_to 'Back', participants_path
 
-= link_to 'Edit', edit_participant_path(@participant)
-'|
-= link_to 'Back', participants_path
+== render 'projects/projects', projects: @projects
+
+== render 'sites/sites', sites: @sites

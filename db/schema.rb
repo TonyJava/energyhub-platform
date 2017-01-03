@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20161230001710) do
   end
 
   create_table "projects", id: :uuid, default: -> { "uuid_generate_v4()" }, force: :cascade do |t|
+    t.string   "name"
     t.uuid     "hub_id"
     t.uuid     "site_id"
     t.string   "project_status"

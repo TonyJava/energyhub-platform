@@ -6,6 +6,7 @@ class SitesController < ApplicationController
   end
 
   def show
+    @projects = @site.projects
   end
 
   def new

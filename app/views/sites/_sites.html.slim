@@ -1,0 +1,9 @@
+.row
+  .col-md-12
+    .hpanel
+      .panel-heading
+        h3 Sites
+      .panel-body
+        table.table.table-bordered.table-striped
+          - sites.each do |site|
+              == render 'sites/site', site: site

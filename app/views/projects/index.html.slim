@@ -1,43 +1,43 @@
-h1 Listing projects
+h1 Projects
+.row
+  .col-md-12
+    .hpanel
+      .panel-body
+        table.table.table-striped
+          thead
+            tr
+              th Hub
+              th Sites
+              th Project status
+              th Project type
+              th Estimated annual production
+              th Estimated annual savings
+              th Total project cost
+              th Fee invoice sent
+              th Fee received
+              th Notes
+              th
+              th
+              th
 
-table
-  thead
-    tr
-      th Hub
-      th Site
-      th Project status
-      th Intake path
-      th Name
-      th Project type
-      th Estimated annual production
-      th Estimated annual savings
-      th Total project cost
-      th Fee invoice sent
-      th Fee received
-      th Notes
-      th
-      th
-      th
+          tbody
+            - @projects.each do |project|
+              tr
+                td = project.hub_id
+                td = project.sites.map { |site| link_to site.name, site_path(id: site.id) }.join(', ').html_safe
+                td = project.project_status
+                td = project.intake_path
+                td = project.project_type
+                td = project.estimated_annual_production
+                td = project.estimated_annual_savings
+                td = project.total_project_cost
+                td = project.fee_invoice_sent
+                td = project.fee_received
+                td = project.notes
+                td = link_to 'Show', project
+                td = link_to 'Edit', edit_project_path(project)
+                td = link_to 'Destroy', project, data: { confirm: 'Are you sure?' }, method: :delete
 
-  tbody
-    - @projects.each do |project|
-      tr
-        td = project.hub_id
-        td = project.site_id
-        td = project.project_status
-        td = project.intake_path
-        td = project.name
-        td = project.project_type
-        td = project.estimated_annual_production
-        td = project.estimated_annual_savings
-        td = project.total_project_cost
-        td = project.fee_invoice_sent
-        td = project.fee_received
-        td = project.notes
-        td = link_to 'Show', project
-        td = link_to 'Edit', edit_project_path(project)
-        td = link_to 'Destroy', project, data: { confirm: 'Are you sure?' }, method: :delete
+        br
 
-br
-
-= link_to 'New Project', new_project_path
+        = link_to 'New Project', new_project_path

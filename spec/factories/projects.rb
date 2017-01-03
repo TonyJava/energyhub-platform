@@ -1,5 +1,6 @@
 FactoryGirl.define do
   factory :project do
+    name "Roof Solar Project"
     project_status "completed"
     intake_path "web"
     project_type "solar"

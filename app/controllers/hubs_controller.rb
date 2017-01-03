@@ -6,6 +6,9 @@ class HubsController < ApplicationController
   end
 
   def show
+    @projects = @hub.projects
+    @participants = @hub.participants
+    @sites = @hub.sites
   end
 
   def new

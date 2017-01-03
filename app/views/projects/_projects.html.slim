@@ -1,0 +1,9 @@
+.row
+  .col-md-12
+    .hpanel
+      .panel-heading
+        h3 Projects
+      .panel-body
+        table.table.table-bordered.table-striped
+          - projects.each do |project|
+              == render 'projects/project', project: project

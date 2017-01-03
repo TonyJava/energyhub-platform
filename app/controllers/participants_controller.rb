@@ -6,6 +6,8 @@ class ParticipantsController < ApplicationController
   end
 
   def show
+    @projects = @participant.projects
+    @sites = @participant.sites
   end
 
   def new
