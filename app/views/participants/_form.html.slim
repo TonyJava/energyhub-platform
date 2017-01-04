@@ -9,13 +9,13 @@
   .row 
     .col-md-8
       .form-group
-        = f.label :hub_id
-        = f.number_field :hub_id, class: "form-control"
+        = f.label :hub
+        = f.collection_select :hub_id, Hub.all, :id, :name, {include_blank: true}, class: 'form-control', data: { behavior: "selectable", placeholder: "Choose a Hub" }
       .form-group
-        = f.label :first_name
+        = f.label :first_name, "First Name"
         = f.text_field :first_name, class: "form-control"
       .form-group
-        = f.label :last_name
+        = f.label :last_name, "Last Name"
         = f.text_field :last_name, class: "form-control"
       .form-group
         = f.label :email

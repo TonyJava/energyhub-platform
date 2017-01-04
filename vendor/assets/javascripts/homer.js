@@ -20,13 +20,13 @@ $(document).ready(function () {
     });
 
     // Initialize metsiMenu plugin to sidebar menu
-    $('#side-menu').metisMenu();
+    //$('#side-menu').metisMenu();
 
     // Initialize iCheck plugin
-    $('.i-checks').iCheck({
-        checkboxClass: 'icheckbox_square-green',
-        radioClass: 'iradio_square-green'
-    });
+    // $('.i-checks').iCheck({
+    //     checkboxClass: 'icheckbox_square-green',
+    //     radioClass: 'iradio_square-green'
+    // });
 
     // Initialize animate panel function
     $('.animate-panel').animatePanel();
@@ -91,13 +91,13 @@ $(document).ready(function () {
     });
 
     // Sparkline bar chart data and options used under Profile image on left navigation panel
-    $("#sparkline1").sparkline([5, 6, 7, 2, 0, 4, 2, 4, 5, 7, 2, 4, 12, 11, 4], {
-        type: 'bar',
-        barWidth: 7,
-        height: '30px',
-        barColor: '#62cb31',
-        negBarColor: '#53ac2a'
-    });
+    // $("#sparkline1").sparkline([5, 6, 7, 2, 0, 4, 2, 4, 5, 7, 2, 4, 12, 11, 4], {
+    //     type: 'bar',
+    //     barWidth: 7,
+    //     height: '30px',
+    //     barColor: '#62cb31',
+    //     negBarColor: '#53ac2a'
+    // });
 
     // Initialize tooltips
     $('.tooltip-demo').tooltip({

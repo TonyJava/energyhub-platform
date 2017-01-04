@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :proposals
+  resources :contractors
   resources :projects
   resources :sites
   resources :participants

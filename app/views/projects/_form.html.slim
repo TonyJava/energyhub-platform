@@ -11,9 +11,6 @@
         = f.label :name
         = f.text_field :name, class: "form-control"
       .form-group
-        = f.label :hub_id
-        = f.text_field :hub_id, class: "form-control"
-      .form-group
         = f.label :site_id
         = f.text_field :site_id, class: "form-control"
       .form-group
@@ -25,6 +22,9 @@
       .form-group
         = f.label :project_type, "Project Type"
         = f.text_field :project_type, class: "form-control"
+      .form-group
+        = f.label :contractors
+        = f.collection_select :contractor_ids, Contractor.all, :id, :name, {include_blank: true}, multiple: "multiple", class: 'form-control', data: { behavior: "selectable", placeholder: "Choose Contractors" }
       .form-group
         = f.label :estimated_annual_production, "Estimated Annual Production (kWh)"
         = f.text_field :estimated_annual_production, class: "form-control"
@@ -46,3 +46,4 @@
         = f.label :notes
         = f.text_area :notes, class: "form-control"
       .actions = f.submit class: "btn btn-primary"
+

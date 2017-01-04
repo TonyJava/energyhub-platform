@@ -1,0 +1,26 @@
+= form_for @contractor do |f|
+  - if @contractor.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@contractor.errors.count, "error")} prohibited this contractor from being saved:"
+      ul
+        - @contractor.errors.full_messages.each do |message|
+          li = message
+
+  .row 
+    .col-md-8
+      .form-group
+        = f.label :name
+        = f.text_field :name, class: "form-control"
+      .form-group
+        = f.label :contact
+        = f.text_field :contact, class: "form-control"
+      .form-group
+        = f.label :email
+        = f.text_field :email, class: "form-control"
+      .form-group
+        = f.label :phone
+        = f.text_field :phone, class: "form-control"
+      .form-group
+        = f.label :states_serviced, "States Serviced"
+        = f.text_field :states_serviced, class: "form-control"
+      .actions = f.submit class: "btn btn-primary"

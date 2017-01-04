@@ -6,8 +6,11 @@ h1= @project.name
       .panel-body
         table.table.table-bordered.table-striped
           tr
+            td Name:
+            td= @project.name
+          tr
             td Hub:
-            td= link_to @project.hub.try(:name), hub_path(id: @project.hub.id)
+            td= link_to @project.hub.name, hub_path(id: @project.hub.id) if @project.hub
           tr
             td Sites:
             td= @project.sites.map { |site| link_to site.name, site_path(id: site.id) }.join(', ').html_safe
@@ -18,26 +21,23 @@ h1= @project.name
             td Intake Path:
             td= @project.intake_path
           tr
-            td Name:
-            td= @project.name
-          tr
-            td Project type:
+            td Project Type:
             td= @project.project_type
           tr
-            td Estimated annual production:
+            td Estimated Annual Production:
             td= @project.estimated_annual_production
           tr
-            td Estimated annual savings:
+            td Estimated Annual Savings:
             td= @project.estimated_annual_savings
           tr
-            td Total project cost:
-            td= @project.total_project_cost
+            td Total Project Cost:
+            td= number_to_currency(@project.total_project_cost)
           tr
-            td Fee invoice sent:
-            td= @project.fee_invoice_sent
+            td Fee Invoice Sent:
+            td= @project.fee_invoice_sent.to_formatted_s(:long)
           tr
-            td Fee received:
-            td= @project.fee_received
+            td Fee Received:
+            td= @project.fee_received.to_formatted_s(:long)
           tr
             td Notes:
             td= @project.notes
@@ -45,3 +45,4 @@ h1= @project.name
         = link_to 'Edit', edit_project_path(@project)
         '|
         = link_to 'Back', projects_path
+== render 'contractors/contractors', contractors: @contractors

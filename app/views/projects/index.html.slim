@@ -7,14 +7,14 @@ h1 Projects
           thead
             tr
               th Hub
-              th Sites
-              th Project status
-              th Project type
-              th Estimated annual production
-              th Estimated annual savings
+              th Site(s)
+              th Project Status
+              th Project Type
+              th Estimated Annual Production (kWh)
+              th Estimated Annual Savings (kWh)
               th Total project cost
-              th Fee invoice sent
-              th Fee received
+              th Fee Invoice Sent?
+              th Fee Received?
               th Notes
               th
               th
@@ -23,16 +23,16 @@ h1 Projects
           tbody
             - @projects.each do |project|
               tr
-                td = project.hub_id
+                td = link_to project.hub.try(:name), hub_path(id: project.hub.id)
                 td = project.sites.map { |site| link_to site.name, site_path(id: site.id) }.join(', ').html_safe
                 td = project.project_status
                 td = project.intake_path
                 td = project.project_type
                 td = project.estimated_annual_production
                 td = project.estimated_annual_savings
-                td = project.total_project_cost
-                td = project.fee_invoice_sent
-                td = project.fee_received
+                td = number_to_currency(project.total_project_cost) if project.total_project_cost
+                td = project.fee_invoice_sent.to_formatted_s(:long) if project.fee_invoice_sent
+                td = project.fee_received.to_formatted_s(:long) if project.fee_received
                 td = project.notes
                 td = link_to 'Show', project
                 td = link_to 'Edit', edit_project_path(project)

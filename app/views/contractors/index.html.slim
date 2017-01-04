@@ -1,0 +1,32 @@
+h1 Contractors
+.row
+  .col-md-12
+    .hpanel
+      .panel-body
+        table.table.table-striped
+          thead
+            tr
+              th Name
+              th Contact
+              th Email
+              th Phone
+              th States Serviced
+              th
+              th
+              th
+
+          tbody
+            - @contractors.each do |contractor|
+              tr
+                td = contractor.name
+                td = contractor.contact
+                td = contractor.email
+                td = contractor.phone
+                td = contractor.states_serviced.map { |state| state }.join(', ')
+                td = link_to 'Show', contractor
+                td = link_to 'Edit', edit_contractor_path(contractor)
+                td = link_to 'Destroy', contractor, data: { confirm: 'Are you sure?' }, method: :delete
+
+        br
+
+        = link_to 'New Contractor', new_contractor_path

@@ -1,0 +1,9 @@
+.row
+  .col-md-12
+    .hpanel
+      .panel-heading
+        h3 Contractors
+      .panel-body
+        table.table.table-bordered.table-striped
+          - contractors.each do |contractor|
+              == render 'contractors/contractor', contractor: contractor

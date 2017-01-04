@@ -1,0 +1,27 @@
+p#notice = notice
+h1= @contractor.name
+.row
+  .col-md-12
+    .hpanel
+      .panel-body
+        table.table.table-bordered.table-striped
+          tr
+            td Name:
+            td= @contractor.name
+          tr
+            td Contact:
+            td= @contractor.contact
+          tr
+            td Email:
+            td= @contractor.email
+          tr
+            td Phone:
+            td= @contractor.phone
+          tr
+            td States Serviced:
+            td= @contractor.states_serviced.map { |state| state }.join(', ')
+
+        = link_to 'Edit', edit_contractor_path(@contractor)
+        '|
+        = link_to 'Back', contractors_path
+== render 'projects/projects', projects: @projects

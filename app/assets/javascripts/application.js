@@ -17,4 +17,6 @@
 //= require bootstrap
 //= require select2
 //= require homer
+//= require app
+//= require_tree ./behaviors
 //= require_tree .

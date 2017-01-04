@@ -2,8 +2,6 @@ class CreateProjects < ActiveRecord::Migration[5.0]
   def change
     create_table :projects, id: :uuid do |t|
       t.string :name
-      t.uuid :hub_id
-      t.uuid :site_id
       t.string :project_status
       t.string :intake_path
       t.string :project_type
@@ -16,5 +14,7 @@ class CreateProjects < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
+    add_column :projects, :site_id, :uuid
+    add_index :projects, :site_id
   end
 end

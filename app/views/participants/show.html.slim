@@ -7,7 +7,7 @@ h1= @participant.full_name
         table.table.table-bordered.table-striped
           tr
             td Hub:
-            td = link_to @participant.hub.try(:name), hub_path(id: @participant.hub_id)
+            td = link_to @participant.hub.name, hub_path(id: @participant.hub_id) if @participant.hub_id
           tr
             td Name:
             td = @participant.full_name

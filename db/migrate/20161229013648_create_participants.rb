@@ -1,7 +1,6 @@
 class CreateParticipants < ActiveRecord::Migration[5.0]
   def change
     create_table :participants, id: :uuid do |t|
-      t.uuid :hub_id
       t.string :first_name
       t.string :last_name
       t.string :email
@@ -12,5 +11,7 @@ class CreateParticipants < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
+    add_column :participants, :hub_id, :uuid
+    add_index :participants, :hub_id
   end
 end

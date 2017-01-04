@@ -9,6 +9,8 @@ RSpec.describe Project, type: :model do
 
   describe "Associations" do
     specify { should have_many :sites }
+    specify { should have_many :proposals }
+    specify { should have_many :contractors }
   end
 
   describe "Validations" do

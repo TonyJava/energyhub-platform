@@ -10,8 +10,8 @@ h1 Participants
           thead
             tr
               th Hub
-              th First name
-              th Last name
+              th First Name
+              th Last Name
               th Email
               th Phone
               th Organization
@@ -24,7 +24,7 @@ h1 Participants
           tbody
             - @participants.each do |participant|
               tr
-                td = participant.hub_id
+                td = link_to participant.hub.try(:name), hub_path(id: participant.hub_id)
                 td = participant.first_name
                 td = participant.last_name
                 td = participant.email

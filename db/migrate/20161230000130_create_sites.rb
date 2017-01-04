@@ -8,9 +8,9 @@ class CreateSites < ActiveRecord::Migration[5.0]
       t.string :state
       t.string :zip_code
       t.string :property_type
-      t.uuid :participant_id
-
       t.timestamps
     end
+    add_column :sites, :participant_id, :uuid
+    add_index :sites, :participant_id
   end
 end
