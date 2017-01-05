@@ -7,7 +7,7 @@ h1= @participant.full_name
         table.table.table-bordered.table-striped
           tr
             td Hub:
-            td = link_to @participant.hub.name, hub_path(id: @participant.hub_id) if @participant.hub_id
+            td = link_to @participant.hub.name, hub_path(id: @participant.hub_id) if @participant.hub
           tr
             td Name:
             td = @participant.full_name
@@ -31,7 +31,7 @@ h1= @participant.full_name
         ' |
         = link_to 'Back', participants_path
         ' |
-        = link_to 'Destroy', participant, data: { confirm: 'Are you sure?' }, method: :delete
+        = link_to 'Destroy', @participant, data: { confirm: 'Are you sure?' }, method: :delete
 
 == render 'projects/projects', projects: @projects
 

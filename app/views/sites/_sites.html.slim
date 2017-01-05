@@ -5,5 +5,16 @@
         h3 Sites
       .panel-body
         table.table.table-bordered.table-striped
-          - sites.each do |site|
+          thead
+            tr
+              th Address 
+              th City
+              th State
+              th Zip code
+              th Property type
+              th Participant
+              th
+
+          tbody
+            - sites.each do |site|
               == render 'sites/site', site: site
