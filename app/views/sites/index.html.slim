@@ -13,21 +13,10 @@ h1 Sites
               th Property type
               th Participant
               th
-              th
-              th
 
           tbody
             - @sites.each do |site|
-              tr
-                td = site.address
-                td = site.city
-                td = site.state
-                td = site.zip_code
-                td = site.property_type
-                td = link_to site.participant.full_name, participant_path(id: site.participant_id)
-                td = link_to 'Show', site
-                td = link_to 'Edit', edit_site_path(site)
-                td = link_to 'Destroy', site, data: { confirm: 'Are you sure?' }, method: :delete
+              == render 'sites/site', site: site
 
         br
 

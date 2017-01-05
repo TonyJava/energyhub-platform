@@ -6,9 +6,6 @@ h1= @project.name
       .panel-body
         table.table.table-bordered.table-striped
           tr
-            td Name:
-            td= @project.name
-          tr
             td Hub:
             td= link_to @project.hub.name, hub_path(id: @project.hub.id) if @project.hub
           tr
@@ -43,6 +40,8 @@ h1= @project.name
             td= @project.notes
 
         = link_to 'Edit', edit_project_path(@project)
-        '|
-        = link_to 'Back', projects_path
+        ' |
+        = link_to 'Back to all Projects', projects_path
+        .pull-right
+          = link_to 'Destroy', @project, data: { confirm: 'Are you sure?' }, method: :delete
 == render 'contractors/contractors', contractors: @contractors

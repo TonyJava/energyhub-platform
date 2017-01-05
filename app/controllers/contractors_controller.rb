@@ -2,11 +2,11 @@ class ContractorsController < ApplicationController
   before_action :set_contractor, only: [:show, :edit, :update, :destroy]
 
   def index
-    @contractors = Contractor.all
+    @contractors = Contractor.all.order(:name)
   end
 
   def show
-    @projects = @contractor.projects
+    @proposals = @contractor.proposals.order(:created_at)
   end
 
   def new

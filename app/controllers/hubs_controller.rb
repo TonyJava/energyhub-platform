@@ -7,7 +7,7 @@ class HubsController < ApplicationController
 
   def show
     @projects = @hub.projects
-    @participants = @hub.participants
+    @participants = @hub.participants.order(:last_name)
     @sites = @hub.sites
   end
 

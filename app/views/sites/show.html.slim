@@ -6,9 +6,6 @@ h1= @site.name
       .panel-body
         table.table.table-bordered.table-striped
           tr
-            td Name:
-            td= @site.name
-          tr
             td Address:
             td= @site.address
           tr
@@ -29,14 +26,8 @@ h1= @site.name
 
         = link_to 'Edit', edit_site_path(@site)
         '|
-        = link_to 'Back', sites_path
+        = link_to 'Back to All Sites', sites_path
+        .pull-right
+          = link_to 'Destroy', @site, data: { confirm: 'Are you sure?' }, method: :delete
 
-.row
-  .col-md-12
-    .hpanel
-      .panel-heading
-        h3 Projects
-      .panel-body
-        table.table.table-bordered.table-striped
-          - @projects.each do |project|
-            == render 'projects/project', project: project
+== render 'projects/projects', projects: @projects

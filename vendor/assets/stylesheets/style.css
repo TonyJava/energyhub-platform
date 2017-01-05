@@ -2342,7 +2342,7 @@ body.fullscreen-panel-mode {
 }
 .navbar-nav > li > a {
   padding: 15px 20px;
-  font-size: 25px;
+  font-size: 14px;
 }
 .navbar-nav > li:last-child > a {
   padding-right: 35px;
@@ -2412,7 +2412,7 @@ body.page-small.show-sidebar #wrapper {
 }
 a {
   cursor: pointer;
-  color: #34495e;
+  /*color: #34495e;*/
 }
 a:hover,
 a:focus {

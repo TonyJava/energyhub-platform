@@ -6,6 +6,7 @@ h1 Projects
         table.table.table-striped
           thead
             tr
+              th Name
               th Hub
               th Site(s)
               th Project Status
@@ -17,13 +18,12 @@ h1 Projects
               th Fee Received?
               th Notes
               th
-              th
-              th
 
           tbody
             - @projects.each do |project|
               tr
-                td = link_to project.hub.try(:name), hub_path(id: project.hub.id)
+                td = link_to project.name, project
+                td = link_to project.hub.name, hub_path(id: project.hub.id) if project.hub
                 td = project.sites.map { |site| link_to site.name, site_path(id: site.id) }.join(', ').html_safe
                 td = project.project_status
                 td = project.intake_path
@@ -34,9 +34,7 @@ h1 Projects
                 td = project.fee_invoice_sent.to_formatted_s(:long) if project.fee_invoice_sent
                 td = project.fee_received.to_formatted_s(:long) if project.fee_received
                 td = project.notes
-                td = link_to 'Show', project
                 td = link_to 'Edit', edit_project_path(project)
-                td = link_to 'Destroy', project, data: { confirm: 'Are you sure?' }, method: :delete
 
         br
 

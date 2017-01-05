@@ -1,12 +1,44 @@
 p#notice = notice
+h1= @project.name
+.row
+  .col-md-12
+    .hpanel
+      .panel-body
+        table.table.table-bordered.table-striped
+          tr
+            td Hub:
+            td= link_to @project.hub.name, hub_path(id: @project.hub.id) if @project.hub
+          tr
+            td Sites:
+            td= @project.sites.map { |site| link_to site.name, site_path(id: site.id) }.join(', ').html_safe
+          tr
+            td Project Status:
+            td= @project.project_status
+          tr
+            td Project Type:
+            td= @project.project_type
+          tr
+            td Notes:
+            td= @project.notes
 
-p
-  strong Accepted?:
-  = @proposal.accepted?
-p
-  strong Proposal doc:
-  = @proposal.proposal_doc
+        = link_to 'Edit Project', edit_project_path(@project)
 
-= link_to 'Edit', edit_proposal_path(@proposal)
-'|
-= link_to 'Back', proposals_path
+.row
+  .col-md-12
+    .hpanel
+      .panel-heading
+        h3 Proposal Status
+      .panel-body
+        table.table.table-bordered.table-striped
+          tr
+            td Accepted?:
+            td= @proposal.accepted? ? "Yes" : "No"
+          tr
+            td Proposal doc:
+            td= link_to @proposal.proposal_doc, @proposal.proposal_doc, target: '_blank'
+
+        = link_to 'Edit', edit_proposal_path(@proposal)
+        '|
+        = link_to 'Back', proposals_path
+        .pull-right
+          = link_to 'Destroy', @proposal, data: { confirm: 'Are you sure?' }, method: :delete

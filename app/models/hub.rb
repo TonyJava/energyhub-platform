@@ -13,4 +13,14 @@ class Hub < ApplicationRecord
     end
     return sites
   end
+
+  def projects
+    projects = []
+    self.sites.each do |site|
+      site.projects.each do |project|
+        projects << project
+      end
+    end
+    return projects
+  end
 end

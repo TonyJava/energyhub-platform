@@ -5,5 +5,15 @@
         h3 Projects
       .panel-body
         table.table.table-bordered.table-striped
-          - projects.each do |project|
+          thead
+            tr
+              th Name
+              th Hub
+              th Site(s)
+              th Project Status
+              th Project Type
+              th Notes
+              th
+          tbody
+            - projects.each do |project|
               == render 'projects/project', project: project

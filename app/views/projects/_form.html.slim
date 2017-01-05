@@ -12,7 +12,7 @@
         = f.text_field :name, class: "form-control"
       .form-group
         = f.label :site_id
-        = f.text_field :site_id, class: "form-control"
+        = f.collection_select :site_ids, Site.all, :id, :name, {include_blank: true}, multiple: "multiple", class: 'form-control', data: { behavior: "selectable", placeholder: "Choose Site(s)" }
       .form-group
         = f.label :project_status, "Project Status"
         = f.text_field :project_status, class: "form-control"

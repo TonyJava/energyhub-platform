@@ -24,4 +24,7 @@ h1= @contractor.name
         = link_to 'Edit', edit_contractor_path(@contractor)
         '|
         = link_to 'Back', contractors_path
-== render 'projects/projects', projects: @projects
+        .pull-right
+          = link_to 'Destroy', @contractor, data: { confirm: 'Are you sure?' }, method: :delete
+
+== render 'proposals/index', proposals: @proposals

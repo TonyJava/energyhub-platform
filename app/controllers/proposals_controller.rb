@@ -1,25 +1,21 @@
 class ProposalsController < ApplicationController
   before_action :set_proposal, only: [:show, :edit, :update, :destroy]
 
-  # GET /proposals
   def index
     @proposals = Proposal.all
   end
 
-  # GET /proposals/1
   def show
+    @project = @proposal.project
   end
 
-  # GET /proposals/new
   def new
     @proposal = Proposal.new
   end
 
-  # GET /proposals/1/edit
   def edit
   end
 
-  # POST /proposals
   def create
     @proposal = Proposal.new(proposal_params)
 
@@ -30,7 +26,6 @@ class ProposalsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /proposals/1
   def update
     if @proposal.update(proposal_params)
       redirect_to @proposal, notice: 'Proposal was successfully updated.'

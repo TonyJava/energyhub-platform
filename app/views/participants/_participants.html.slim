@@ -5,5 +5,16 @@
         h3 Participants
       .panel-body
         table.table.table-bordered.table-striped
-          - participants.each do |participant|
+          thead
+            tr
+              th Hub
+              th Name
+              th Email
+              th Phone
+              th Organization
+              th Title
+              th Notes
+              th
+          tbody
+            - participants.each do |participant|
               == render 'participants/participant', participant: participant

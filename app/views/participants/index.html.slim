@@ -10,31 +10,17 @@ h1 Participants
           thead
             tr
               th Hub
-              th First Name
-              th Last Name
+              th Name
               th Email
               th Phone
               th Organization
               th Title
               th Notes
               th
-              th
-              th
 
           tbody
             - @participants.each do |participant|
-              tr
-                td = link_to participant.hub.try(:name), hub_path(id: participant.hub_id)
-                td = participant.first_name
-                td = participant.last_name
-                td = participant.email
-                td = participant.phone
-                td = participant.organization
-                td = participant.title
-                td = participant.notes
-                td = link_to 'Show', participant
-                td = link_to 'Edit', edit_participant_path(participant)
-                td = link_to 'Destroy', participant, data: { confirm: 'Are you sure?' }, method: :delete
+              == render 'participants/participant', participant: participant
 
         br
 

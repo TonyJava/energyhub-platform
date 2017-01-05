@@ -11,6 +11,8 @@ h1= @hub.name
         = link_to 'Edit', edit_hub_path(@hub)
         '|
         = link_to 'Back', hubs_path
+        .pull-right
+          = link_to 'Destroy', @hub, data: { confirm: 'Are you sure?' }, method: :delete
 
 == render 'projects/projects', projects: @projects
 

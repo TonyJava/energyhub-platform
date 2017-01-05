@@ -17,15 +17,7 @@ h1 Contractors
 
           tbody
             - @contractors.each do |contractor|
-              tr
-                td = contractor.name
-                td = contractor.contact
-                td = contractor.email
-                td = contractor.phone
-                td = contractor.states_serviced.map { |state| state }.join(', ')
-                td = link_to 'Show', contractor
-                td = link_to 'Edit', edit_contractor_path(contractor)
-                td = link_to 'Destroy', contractor, data: { confirm: 'Are you sure?' }, method: :delete
+              == render 'contractors/contractor', contractor: contractor
 
         br
 

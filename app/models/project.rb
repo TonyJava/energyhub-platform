@@ -7,7 +7,7 @@ class Project < ApplicationRecord
   validates :project_type, presence: true
 
   def hub
-    if self.sites.any? && self.sites.first.participant && self.sits.first.participant.hub
+    if self.sites.any? && self.sites.first.participant && self.sites.first.participant.hub
       self.sites.first.participant.hub
     else
       nil

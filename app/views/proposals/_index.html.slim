@@ -1,0 +1,21 @@
+.row
+  .col-md-12
+    .hpanel
+      .panel-heading
+        h3 Project Proposals
+      .panel-body
+        table.table.table-bordered.table-striped
+          thead
+            tr
+              th Project Name
+              th Accepted?
+              th Proposal doc
+              th
+              th
+
+          tbody
+            - @proposals.each do |proposal|
+              == render 'proposals/proposal', proposal: proposal
+
+        br
+

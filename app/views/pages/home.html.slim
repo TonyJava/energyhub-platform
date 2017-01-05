@@ -6,19 +6,19 @@
 	.col-lg-12
 		.row
 			.col-md-6
-				.hpanel
-					.panel-body
-						.hbody
-							h3 Projects
-							table.table.table-striped
-          			- @projects.each do |project|
-									= link_to project.name, project_path(id: project.id)
+				h3 Projects
+				table.table.table-striped
+					- @projects.each do |project|
+						.hpanel
+							.panel-body
+								.hbody
+									= project_summary(project)
 
 			.col-md-6
-				.hpanel
-					.panel-body
-						.hbody
-							h3 Participants
-							table.table.table-striped
-          			- @participants.each do |participant|
-									= link_to participant.name, participant_path(id: participant.id)
+				h3 Participants
+				table.table.table-striped
+					- @participants.each do |participant|
+						.hpanel
+							.panel-body
+								.hbody
+									= participant_summary(participant)
