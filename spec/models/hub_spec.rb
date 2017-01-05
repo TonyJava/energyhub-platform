@@ -6,6 +6,8 @@ RSpec.describe Hub, type: :model do
   let(:participant) { create(:participant, hub_id: hub.id) }
   let(:site1) { create(:site, participant_id: participant.id) }
   let(:site2) { create(:site, participant_id: participant.id) }
+  let(:project1) { site1.projects.create(FactoryGirl.build(:project).attributes) }
+  let(:project2) { site1.projects.create(FactoryGirl.build(:project, name: "Solar Parking Shade Structure").attributes) }
 
   describe "Associations" do
     specify { should have_many :participants }
@@ -27,6 +29,21 @@ RSpec.describe Hub, type: :model do
 
     it "returns an empty array when no sites" do
       expect(hub2.sites).to eq([])
+    end
+  end
+
+  describe "#projects" do
+    before(:each) do
+      project1
+      project2
+    end 
+    
+    it "returns the correct number of projects" do
+      expect(hub.projects.count).to eq(2)
+    end
+
+    it "returns an empty array when no projects" do
+      expect(hub2.projects).to eq([])
     end
   end
 end

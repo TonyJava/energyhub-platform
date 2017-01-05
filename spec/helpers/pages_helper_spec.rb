@@ -1,15 +1,29 @@
 require 'rails_helper'
 
-# Specs in this file have access to a helper object that includes
-# the PagesHelper. For example:
-#
-# describe PagesHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       expect(helper.concat_strings("this","that")).to eq("this that")
-#     end
-#   end
-# end
 RSpec.describe PagesHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:hub) { create(:hub) }
+  let(:hub2) { create(:hub) }
+  let(:participant) { create(:participant, hub_id: hub.id) }
+  let(:site) { create(:site, participant_id: participant.id) }
+  let(:project) { site.projects.create(FactoryGirl.build(:project).attributes) }
+
+  describe "#project_summary" do
+    before(:each) do
+      project
+    end
+
+    it "returns the correct string" do
+      expect(project_summary(project)).to include("Roof Solar Project")
+    end
+  end
+
+  describe "#participant_summary" do
+    before(:each) do
+      participant
+    end
+
+    it "returns the correct string" do
+      expect(participant_summary(participant)).to include("Elon Musk")
+    end
+  end
 end
