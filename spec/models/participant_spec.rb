@@ -15,6 +15,11 @@ RSpec.describe Participant, type: :model do
     specify { should have_many :sites }
   end
 
+  describe "Validations" do
+    specify { should validate_presence_of(:first_name) }
+    specify { should validate_presence_of(:last_name) }
+  end
+
   describe "#projects" do
     before(:each) do
       project

@@ -14,6 +14,8 @@ RSpec.describe Project, type: :model do
   end
 
   describe "Validations" do
+    specify { should validate_presence_of(:name) }
+    specify { should validate_presence_of(:project_status) }
     specify { should validate_presence_of(:project_type) }
   end
 

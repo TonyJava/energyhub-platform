@@ -4,7 +4,7 @@ class Project < ApplicationRecord
   has_many :proposals
   has_many :contractors, through: :proposals
 
-  validates :project_type, presence: true
+  validates :name, :project_type, :project_status, presence: true
 
   def hub
     if self.sites.any? && self.sites.first.participant && self.sites.first.participant.hub

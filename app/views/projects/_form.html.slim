@@ -7,21 +7,21 @@
           li = message
   .row 
     .col-md-8
-      .form-group
+      .form-group.required
         = f.label :name
         = f.text_field :name, class: "form-control"
       .form-group
         = f.label :site_id
         = f.collection_select :site_ids, Site.all, :id, :name, {include_blank: true}, multiple: "multiple", class: 'form-control', data: { behavior: "selectable", placeholder: "Choose Site(s)" }
-      .form-group
+      .form-group.required
         = f.label :project_status, "Project Status"
-        = f.text_field :project_status, class: "form-control"
+        = f.select :project_status, options_for_select([['Action', 'active'],['Inactive', 'inactive'], ['Completed', 'completed']], @project.project_status), {:prompt => "Please select"}, class: "form-control"
       .form-group
         = f.label :intake_path, "Intake Path"
-        = f.text_field :intake_path, class: "form-control"
-      .form-group
+        = f.select :intake_path, options_for_select([['Web', 'web'],['User', 'user']], @project.intake_path), {:prompt => "Please select"}, class: "form-control"
+      .form-group.required
         = f.label :project_type, "Project Type"
-        = f.text_field :project_type, class: "form-control"
+        = f.select :project_type, options_for_select([['Solar', 'solar'],['Energy Efficiency', 'energy_efficiency']], @project.project_type), {:prompt => "Please select"}, class: "form-control"
       .form-group
         = f.label :contractors
         = f.collection_select :contractor_ids, Contractor.all, :id, :name, {include_blank: true}, multiple: "multiple", class: 'form-control', data: { behavior: "selectable", placeholder: "Choose Contractors" }

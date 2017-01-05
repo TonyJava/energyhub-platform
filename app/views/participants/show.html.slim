@@ -9,9 +9,6 @@ h1= @participant.full_name
             td Hub:
             td = link_to @participant.hub.name, hub_path(id: @participant.hub_id) if @participant.hub
           tr
-            td Name:
-            td = @participant.full_name
-          tr
             td Email:
             td = @participant.email
           tr

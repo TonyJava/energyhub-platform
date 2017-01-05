@@ -14,6 +14,8 @@ RSpec.describe Site, type: :model do
   describe "Validations" do
     specify { should validate_presence_of(:city) }
     specify { should validate_presence_of(:state) }
+    specify { should validate_presence_of(:name) }
+    specify { should validate_presence_of(:property_type) }
   end
 
   describe "#address" do

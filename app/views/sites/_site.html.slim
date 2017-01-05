@@ -1,5 +1,5 @@
 tr
-  td = link_to site.name, site
+  td = link_to site.name, site_path(id: site.id) if site
   td = site.address
   td = site.city
   td = site.state

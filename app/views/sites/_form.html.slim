@@ -8,6 +8,9 @@
   .row 
     .col-md-8
       .form-group
+        = f.label :participant_id
+        = f.collection_select :participant_id, Participant.all, :id, :full_name, {include_blank: true}, class: 'form-control', data: { behavior: "selectable", placeholder: "Choose a Participant" }
+      .form-group.required
         = f.label :name
         = f.text_field :name, class: "form-control"
       .form-group
@@ -16,19 +19,16 @@
       .form-group
         = f.label :address_2
         = f.text_field :address_2, class: "form-control"
-      .form-group
+      .form-group.required
         = f.label :city
         = f.text_field :city, class: "form-control"
-      .form-group
+      .form-group.required
         = f.label :state
         = f.text_field :state, class: "form-control"
       .form-group
         = f.label :zip_code, "Zip Code"
         = f.text_field :zip_code, class: "form-control"
-      .form-group
+      .form-group.required
         = f.label :property_type, "Property Type"
-        = f.text_field :property_type, class: "form-control"
-      .form-group
-        = f.label :participant_id
-        = f.text_field :participant_id, class: "form-control"
+        = f.select :property_type, options_for_select([['Commercial', 'commercial'],['Public', 'public'], ['Residential', 'residential']], @site.property_type), {:prompt => "Please select"}, class: "form-control"
       .actions = f.submit class: "btn btn-primary"

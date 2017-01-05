@@ -2,6 +2,8 @@ class Participant < ApplicationRecord
   belongs_to :hub
   has_many :sites
 
+  validates :first_name, :last_name, presence: true
+
   def projects
     projects = []
     self.sites.each do |site|

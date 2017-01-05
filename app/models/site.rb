@@ -3,7 +3,7 @@ class Site < ApplicationRecord
   has_many :projects, through: :site_projects
   belongs_to :participant
 
-  validates :city, :state, presence: true
+  validates :city, :state, :name, :property_type, presence: true
 
   def address
     "#{self.address_1} #{self.address_2}"
