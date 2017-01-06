@@ -22,7 +22,7 @@ h1= @contractor.name
             td= @contractor.states_serviced.map { |state| state }.join(', ')
 
         = link_to 'Edit', edit_contractor_path(@contractor)
-        '|
+        '&nbsp;&nbsp;|
         = link_to 'Back to All Contractors', contractors_path
         .pull-right
           = link_to 'Destroy', @contractor, data: { confirm: 'Are you sure?' }, method: :delete

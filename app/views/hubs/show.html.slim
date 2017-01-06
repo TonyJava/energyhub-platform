@@ -9,7 +9,7 @@ h1= @hub.name
             td Percent Fee
             td= @hub.percent_fee
         = link_to 'Edit', edit_hub_path(@hub)
-        '|
+        '&nbsp;&nbsp;|
         = link_to 'Back to All Hubs', hubs_path
         .pull-right
           = link_to 'Destroy', @hub, data: { confirm: 'Are you sure?' }, method: :delete

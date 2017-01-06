@@ -40,7 +40,7 @@ h1= @project.name
             td= @project.notes
 
         = link_to 'Edit', edit_project_path(@project)
-        ' |
+        '&nbsp;&nbsp;|
         = link_to 'Back to all Projects', projects_path
         .pull-right
           = link_to 'Destroy', @project, data: { confirm: 'Are you sure?' }, method: :delete
