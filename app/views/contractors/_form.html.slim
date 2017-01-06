@@ -21,6 +21,6 @@
         = f.label :phone
         = f.text_field :phone, class: "form-control"
       .form-group
-        = f.label :states_serviced, "States Serviced"
-        = f.text_field :states_serviced, class: "form-control"
+        = f.label :states_serviced, "States Serviced (Separate with comma)"
+        = text_field_tag "[contractor][states_serviced][]", "", value: @contractor.states_serviced, class: "form-control"
       .actions = f.submit class: "btn btn-primary"

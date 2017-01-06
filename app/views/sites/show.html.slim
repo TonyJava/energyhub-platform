@@ -6,6 +6,9 @@ h1= @site.name
       .panel-body
         table.table.table-bordered.table-striped
           tr
+            td Participant:
+            td= link_to @site.participant.full_name, participant_path(id: @site.participant_id)
+          tr
             td Address:
             td= @site.address
           tr
@@ -20,13 +23,12 @@ h1= @site.name
           tr
             td Property type:
             td= @site.property_type
-          tr
-            td Participant:
-            td= link_to @site.participant.full_name, participant_path(id: @site.participant_id)
 
         = link_to 'Edit', edit_site_path(@site)
-        '|
+        '&nbsp;&nbsp;|
         = link_to 'Back to All Sites', sites_path
+        '&nbsp;&nbsp;| 
+        = link_to "Create a New Project", new_project_path
         .pull-right
           = link_to 'Destroy', @site, data: { confirm: 'Are you sure?' }, method: :delete
 

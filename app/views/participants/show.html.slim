@@ -25,10 +25,12 @@ h1= @participant.full_name
             td = @participant.notes
 
         = link_to 'Edit', edit_participant_path(@participant)
-        ' |
-        = link_to 'Back', participants_path
-        ' |
-        = link_to 'Destroy', @participant, data: { confirm: 'Are you sure?' }, method: :delete
+        '&nbsp;&nbsp;|
+        = link_to 'Back to All Participants', participants_path
+        '&nbsp;&nbsp;|
+        = link_to "Create a New Site", new_site_path
+        .pull-right
+          = link_to 'Destroy', @participant, data: { confirm: 'Are you sure?' }, method: :delete
 
 == render 'projects/projects', projects: @projects
 

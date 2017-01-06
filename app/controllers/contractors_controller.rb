@@ -46,6 +46,6 @@ class ContractorsController < ApplicationController
   end
 
   def contractor_params
-    params.require(:contractor).permit(:name, :contact, :email, :phone, :states_serviced)
+    params.require(:contractor).permit(:name, :contact, :email, :phone, states_serviced: [])
   end
 end
