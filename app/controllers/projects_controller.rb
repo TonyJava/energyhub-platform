@@ -45,6 +45,6 @@ class ProjectsController < ApplicationController
   end
 
   def project_params
-    params.require(:project).permit(:name, :site_id, :project_status, :intake_path, :project_type, :estimated_annual_production, :estimated_annual_savings, :total_project_cost, :fee_invoice_sent, :fee_received, :contractor_ids => [])
+    params.require(:project).permit(:name, :project_status, :intake_path, :project_type, :estimated_annual_production, :estimated_annual_savings, :total_project_cost, :fee_invoice_sent, :fee_received, contractor_ids: [], site_ids: [])
   end
 end
