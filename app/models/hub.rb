@@ -1,6 +1,5 @@
 class Hub < ApplicationRecord
-  has_many :participants
-  has_many :projects
+  has_many :participants, dependent: :nullify
 
   validates :name, presence: true
 

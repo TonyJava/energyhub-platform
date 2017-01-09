@@ -2,7 +2,7 @@ class ContractorsController < ApplicationController
   before_action :set_contractor, only: [:show, :edit, :update, :destroy]
 
   def index
-    @contractors = Contractor.all.order(:name)
+    @contractors = Contractor.order(:name)
   end
 
   def show

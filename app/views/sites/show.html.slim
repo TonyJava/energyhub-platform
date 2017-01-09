@@ -7,7 +7,10 @@ h1= @site.name
         table.table.table-bordered.table-striped
           tr
             td Participant:
-            td= link_to @site.participant.full_name, participant_path(id: @site.participant_id)
+            td= link_to @site.participant.full_name, participant_path(id: @site.participant_id) if @site.participant
+          tr
+            td Hub:
+            td= link_to @site.participant.hub.name, hub_path(id: @site.participant.hub.id) if @site.participant && @site.participant.hub
           tr
             td Address:
             td= @site.address

@@ -1,0 +1,21 @@
+.login-container
+  .row
+    .col-md-12
+      .text-center.m-b-md
+        h2 Log In
+        .hpanel
+          .panel-body
+            = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+              .form-group
+                .pull-left
+                  = f.label :email
+                = f.email_field :email, autofocus: true, class: "form-control"
+
+              .form-group
+                .pull-left
+                  = f.label :password
+                = f.password_field :password, autocomplete: "off", class: "form-control"
+                br
+              .actions
+                = f.submit "Log in", class: "btn btn-success btn-block"
+

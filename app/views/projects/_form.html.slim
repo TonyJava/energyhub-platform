@@ -21,27 +21,51 @@
         = f.select :intake_path, options_for_select([['Web', 'web'],['User', 'user']], @project.intake_path), {:prompt => "Please select"}, class: "form-control"
       .form-group.required
         = f.label :project_type, "Project Type"
-        = f.select :project_type, options_for_select([['Solar', 'solar'],['Energy Efficiency', 'energy_efficiency']], @project.project_type), {:prompt => "Please select"}, class: "form-control"
+        = f.select :project_type, options_for_select([['Solar', 'solar'],['Energy Efficiency', 'energy_efficiency'], ['Other', 'other']], @project.project_type), {:prompt => "Please select"}, class: "form-control"
+      .form-group
+        = f.label :solar_estimate, "Preliminary Solar Assessment Estimate (kW)"
+        .input-group.m-b
+          = f.text_field :solar_estimate, class: "form-control"
+          span.input-group-addon kW
+      .form-group
+        = f.label :ee_estimate, "Preliminary Energy Efficiency Assessment Estimate ($)"
+        .input-group.m-b
+          span.input-group-addon $
+          = f.text_field :ee_estimate, class: "form-control"
+          span.input-group-addon .00
       .form-group
         = f.label :contractors
         = f.collection_select :contractor_ids, Contractor.all, :id, :name, {include_blank: true}, multiple: "multiple", class: 'form-control', data: { behavior: "selectable", placeholder: "Choose Contractors" }
       .form-group
         = f.label :estimated_annual_production, "Estimated Annual Production (kWh)"
-        = f.text_field :estimated_annual_production, class: "form-control"
+        .input-group.m-b
+          = f.number_field :estimated_annual_production, step: :any, class: "form-control"
+          span.input-group-addon kWh
       .form-group
-        = f.label :estimated_annual_savings, "Estimated Annual Savings (kWh"
-        = f.text_field :estimated_annual_savings, class: "form-control"
+        = f.label :estimated_annual_savings, "Estimated Annual Savings (kWh)"
+        .input-group.m-b
+          = f.number_field :estimated_annual_savings, step: :any, class: "form-control"
+          span.input-group-addon kWh
       .form-group
         = f.label :total_project_cost, "Total Project Cost (completed)"
-        = f.text_field :total_project_cost, class: "form-control"
+        .input-group.m-b
+          span.input-group-addon $
+          = f.text_field :total_project_cost, class: "form-control"
+          span.input-group-addon .00
       .form-group
         = f.label :fee_invoice_sent, "Fee Invoice Sent Date"
-        p
-          = f.date_select :fee_invoice_sent, class: "form-control"
+        - if request.env['HTTP_USER_AGENT'] =~ /[^\(]*[^\)]Chrome\//
+          = f.date_field :fee_invoice_sent, class: "form-control"
+        - else
+          p
+            = f.date_select :fee_invoice_sent, class: "form-control"
       .form-group
         = f.label :fee_received, "Fee Received Date"
-        p
-          = f.date_select :fee_received, class: "form-control"
+        - if request.env['HTTP_USER_AGENT'] =~ /[^\(]*[^\)]Chrome\//
+          = f.date_field :fee_received, class: "form-control"
+        - else
+          p
+            = f.date_select :fee_received, class: "form-control"
       .form-group
         = f.label :notes
         = f.text_area :notes, class: "form-control"

@@ -31,10 +31,10 @@ h1= @project.name
             td= number_to_currency(@project.total_project_cost)
           tr
             td Fee Invoice Sent:
-            td= @project.fee_invoice_sent.to_formatted_s(:long)
+            td= @project.fee_invoice_sent.to_formatted_s(:long) if @project.fee_invoice_sent
           tr
             td Fee Received:
-            td= @project.fee_received.to_formatted_s(:long)
+            td= @project.fee_received.to_formatted_s(:long) if @project.fee_received
           tr
             td Notes:
             td= @project.notes
@@ -44,4 +44,7 @@ h1= @project.name
         = link_to 'Back to all Projects', projects_path
         .pull-right
           = link_to 'Destroy', @project, data: { confirm: 'Are you sure?' }, method: :delete
+
+== render 'sites/sites', sites: @sites
+
 == render 'contractors/contractors', contractors: @contractors

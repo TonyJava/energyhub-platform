@@ -1,6 +1,6 @@
 tr
-  td = link_to participant.hub.name, hub_path(id: participant.hub.id) if participant.hub
   td = link_to participant.full_name, participant
+  td = link_to participant.hub.name, hub_path(id: participant.hub.id) if participant.hub
   td = participant.email
   td = participant.phone
   td = participant.organization

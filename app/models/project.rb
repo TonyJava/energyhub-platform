@@ -1,7 +1,7 @@
 class Project < ApplicationRecord
   has_many :site_projects
   has_many :sites, through: :site_projects
-  has_many :proposals
+  has_many :proposals, dependent: :destroy
   has_many :contractors, through: :proposals
 
   validates :name, :project_type, :project_status, presence: true

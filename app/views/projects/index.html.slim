@@ -11,6 +11,8 @@ h1 Projects
               th Site(s)
               th Project Status
               th Project Type
+              th Preliminary Solar Assessment Estimate
+              th Preliminary Energy Efficiency Assessment Estimate
               th Estimated Annual Production (kWh)
               th Estimated Annual Savings (kWh)
               th Total project cost
@@ -28,6 +30,8 @@ h1 Projects
                 td = project.project_status
                 td = project.intake_path
                 td = project.project_type
+                td = project.solar_estimate
+                td = project.ee_estimate
                 td = project.estimated_annual_production
                 td = project.estimated_annual_savings
                 td = number_to_currency(project.total_project_cost) if project.total_project_cost

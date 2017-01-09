@@ -1,8 +1,9 @@
 tr
   td = link_to project.name, project
-  td = link_to project.hub.name, hub_path(id: project.hub.id) if project.hub
   td = project.sites.map { |site| link_to site.name, site_path(id: site.id) }.join(', ').html_safe
   td = project.project_status
   td = project.intake_path
   td = project.project_type
+  td = project.solar_estimate
+  td = project.ee_estimate
   td = link_to 'Edit', edit_project_path(project)

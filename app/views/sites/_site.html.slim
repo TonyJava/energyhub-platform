@@ -5,5 +5,5 @@ tr
   td = site.state
   td = site.zip_code
   td = site.property_type
-  td = site.participant_id
+  td = link_to site.participant.full_name, participant_path(id: site.participant.id) if site.participant
   td = link_to 'Edit', edit_site_path(site)

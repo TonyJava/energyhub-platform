@@ -11,33 +11,34 @@ html
 					- if user_signed_in?
 						li= link_to "Edit #{current_user.email}", edit_user_registration_path 
 						li= link_to "Logout", destroy_user_session_path, method: :delete 
-		aside id="menu"
-			#navigation
-				ul.nav id="side-menu"
-					- if params["controller"] == "hubs"
-						li.active= link_to "Hubs", hubs_path
-					- else
-						li= link_to "Hubs", hubs_path
-					- if params["controller"] == "projects"
-						li.active= link_to "Projects", projects_path
-					- else
-						li= link_to "Projects", projects_path
-					- if params["controller"] == "participants"
-						li.active= link_to "Participants", participants_path
-					- else
-						li= link_to "Participants", participants_path
-					- if params["controller"] == "sites"
-						li.active= link_to "Sites", sites_path
-					- else
-						li= link_to "Sites", sites_path
-					- if params["controller"] == "contractors"
-						li.active= link_to "Contractors", contractors_path
-					- else
-						li= link_to "Contractors", contractors_path
-					- if params["controller"] == "users"
-						li.active= link_to "Users", users_path
-					- else
-						li= link_to "Users", users_path
+		- if user_signed_in?
+			aside id="menu"
+				#navigation
+					ul.nav id="side-menu"
+						- if params["controller"] == "hubs"
+							li.active= link_to "Hubs", hubs_path
+						- else
+							li= link_to "Hubs", hubs_path
+						- if params["controller"] == "projects"
+							li.active= link_to "Projects", projects_path
+						- else
+							li= link_to "Projects", projects_path
+						- if params["controller"] == "participants"
+							li.active= link_to "Participants", participants_path
+						- else
+							li= link_to "Participants", participants_path
+						- if params["controller"] == "sites"
+							li.active= link_to "Sites", sites_path
+						- else
+							li= link_to "Sites", sites_path
+						- if params["controller"] == "contractors"
+							li.active= link_to "Contractors", contractors_path
+						- else
+							li= link_to "Contractors", contractors_path
+						- if params["controller"] == "users"
+							li.active= link_to "Users", users_path
+						- else
+							li= link_to "Users", users_path
 
 		#wrapper
 			.content.animate-panel
