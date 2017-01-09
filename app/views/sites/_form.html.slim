@@ -30,5 +30,5 @@
         = f.text_field :zip_code, class: "form-control"
       .form-group.required
         = f.label :property_type, "Property Type"
-        = f.select :property_type, options_for_select([['Commercial', 'commercial'],['Public', 'public'], ['Residential', 'residential']], @site.property_type), {:prompt => "Please select"}, class: "form-control"
+        = f.select :property_type, options_for_select([['Business', Site::BUSINESS], ['Residential', Site::RESIDENTIAL], ["Municipality / City", Site::MUNICIPALITY], ["Non-Profit / Church", Site::NON_PROFIT], ["Other", Site::OTHER]], @site.property_type), {:prompt => "Please select"}, class: "form-control"
       .actions = f.submit class: "btn btn-primary"

@@ -8,9 +8,21 @@
 
   .row 
     .col-md-8
-      .form-group
-        = f.label :accepted?
-        = f.check_box :accepted?, class: "form-control"
+      .hpanel
+        .panel-heading
+          h4 Proposal Steps
+        .panel-body
+          table.table.table-bordered.table-striped
+            thead
+              tr
+                th Step 
+                th Completed
+            tbody
+              = f.fields_for :proposal_steps do |step_field|
+                tr
+                  td= step_field.text_field :name
+                  td= step_field.date_field :step_completed
+
       .form-group
         = f.label :proposal_doc
         = f.text_field :proposal_doc, class: "form-control"

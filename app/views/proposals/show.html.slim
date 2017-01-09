@@ -29,16 +29,24 @@ h1= @project.name
       .panel-heading
         h3 Proposal Status
       .panel-body
+        .row 
+          .col-md-8
+            h4 Proposal Steps
+            table.table.table-bordered.table-striped
+              thead
+                tr
+                  th Step 
+                  th Completed
+              tbody
+                - @proposal.proposal_steps.each do |proposal_step|
+                  tr
+                    td= proposal_step.name
+                    td= proposal_step.step_completed
         table.table.table-bordered.table-striped
-          tr
-            td Accepted?:
-            td= @proposal.accepted? ? "Yes" : "No"
           tr
             td Proposal doc:
             td= link_to @proposal.proposal_doc, @proposal.proposal_doc, target: '_blank'
 
         = link_to 'Edit', edit_proposal_path(@proposal)
-        '|
-        = link_to 'Back', proposals_path
         .pull-right
           = link_to 'Destroy', @proposal, data: { confirm: 'Are you sure?' }, method: :delete

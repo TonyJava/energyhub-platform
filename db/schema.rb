@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170109150355) do
+ActiveRecord::Schema.define(version: 20170109161805) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,6 +64,16 @@ ActiveRecord::Schema.define(version: 20170109150355) do
     t.decimal  "solar_estimate"
     t.decimal  "ee_estimate",                 precision: 12, scale: 2
     t.index ["site_id"], name: "index_projects_on_site_id", using: :btree
+  end
+
+  create_table "proposal_steps", id: :uuid, default: -> { "uuid_generate_v4()" }, force: :cascade do |t|
+    t.string   "name"
+    t.date     "step_completed"
+    t.integer  "order"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.uuid     "proposal_id"
+    t.index ["proposal_id"], name: "index_proposal_steps_on_proposal_id", using: :btree
   end
 
   create_table "proposals", id: :uuid, default: -> { "uuid_generate_v4()" }, force: :cascade do |t|

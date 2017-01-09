@@ -1,4 +1,8 @@
 class Project < ApplicationRecord
+  ACTIVE = "Active"
+  INACTIVE  = "Inactive"
+  COMPLETED = "Completed"
+
   has_many :site_projects
   has_many :sites, through: :site_projects
   has_many :proposals, dependent: :destroy

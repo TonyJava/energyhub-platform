@@ -9,6 +9,7 @@ class ProposalsController < ApplicationController
   end
 
   def update
+    binding.pry
     if @proposal.update(proposal_params)
       redirect_to @proposal, notice: 'Proposal was successfully updated.'
     else
@@ -28,6 +29,6 @@ class ProposalsController < ApplicationController
   end
 
   def proposal_params
-    params.require(:proposal).permit(:accepted?, :proposal_doc)
+    params.require(:proposal).permit(:accepted?, :proposal_doc, proposal_steps_attributes: [:name, :step_completed, :id])
   end
 end

@@ -15,7 +15,7 @@
         = f.collection_select :site_ids, Site.all, :id, :name, {include_blank: true}, multiple: "multiple", class: 'form-control', data: { behavior: "selectable", placeholder: "Choose Site(s)" }
       .form-group.required
         = f.label :project_status, "Project Status"
-        = f.select :project_status, options_for_select([['Active', 'active'],['Inactive', 'inactive'], ['Completed', 'completed']], @project.project_status), {:prompt => "Please select"}, class: "form-control"
+        = f.select :project_status, options_for_select([['Active', Project::ACTIVE],['Inactive', Project::INACTIVE], ['Completed', Project::COMPLETED]], @project.project_status), {:prompt => "Please select"}, class: "form-control"
       .form-group
         = f.label :intake_path, "Intake Path"
         = f.select :intake_path, options_for_select([['Web', 'web'],['User', 'user']], @project.intake_path), {:prompt => "Please select"}, class: "form-control"
