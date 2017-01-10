@@ -47,6 +47,6 @@ h1= @project.name
             td Proposal doc:
             td= link_to @proposal.proposal_doc, @proposal.proposal_doc, target: '_blank'
 
-        = link_to 'Edit', edit_proposal_path(@proposal)
+        = link_to 'Edit Proposal', edit_proposal_path(@proposal)
         .pull-right
           = link_to 'Destroy', @proposal, data: { confirm: 'Are you sure?' }, method: :delete
