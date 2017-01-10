@@ -37,7 +37,6 @@ class ParticipantsController < ApplicationController
   def create_hub_participant
     @hub = Hub.find(params[:hub_id])
     @participant = Participant.new(hub_participant_params) 
-    binding.pry
     if @participant.save
       redirect_to participant_confirmation_path, notice: 'Participant was successfully created.'
     else

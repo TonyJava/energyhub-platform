@@ -9,7 +9,6 @@ class Proposal < ApplicationRecord
   private
 
   def create_proposal_steps
-    binding.pry
     self.proposal_steps.create(name: ProposalStep::INITIATED, order: 1)
     self.proposal_steps.create(name: ProposalStep::SCHEDULED, order: 2)
     self.proposal_steps.create(name: ProposalStep::ONSITE_COMPLETED, order: 3)
