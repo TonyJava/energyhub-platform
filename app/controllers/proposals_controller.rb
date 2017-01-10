@@ -9,7 +9,6 @@ class ProposalsController < ApplicationController
   end
 
   def update
-    binding.pry
     if @proposal.update(proposal_params)
       redirect_to @proposal, notice: 'Proposal was successfully updated.'
     else

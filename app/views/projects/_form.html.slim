@@ -25,7 +25,7 @@
       .form-group
         = f.label :solar_estimate, "Preliminary Solar Assessment Estimate (kW)"
         .input-group.m-b
-          = f.text_field :solar_estimate, class: "form-control"
+          = f.number_field :solar_estimate, class: "form-control"
           span.input-group-addon kW
       .form-group
         = f.label :ee_estimate, "Preliminary Energy Efficiency Assessment Estimate ($)"
