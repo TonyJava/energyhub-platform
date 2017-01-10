@@ -1,0 +1,27 @@
+.row
+  .col-md-12
+    .hpanel
+      .panel-heading
+        h3 Project Proposals
+      .panel-body
+        table.table.table-bordered.table-striped
+          thead
+            tr
+              th Contractor
+              th Project Status
+              th Accepted?
+              th Proposal doc
+              th
+              th
+
+          tbody
+            - proposals.each do |proposal|
+              tr
+                td = link_to proposal.contractor.name, contractor_path(id: proposal.contractor.id)
+                td = proposal.project.project_status
+                td = "Yes" unless proposal.proposal_steps.where(name: ProposalStep::SELECTED).first.nil? 
+                td = link_to proposal.proposal_doc, proposal.proposal_doc, target: '_blank' if proposal.proposal_doc
+                td = link_to 'View Proposal', proposal
+                td = link_to 'Edit Proposal', edit_proposal_path(proposal)
+
+        br

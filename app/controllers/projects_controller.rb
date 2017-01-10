@@ -8,6 +8,7 @@ class ProjectsController < ApplicationController
   def show
     @contractors = @project.contractors
     @sites = @project.sites
+    @proposals = @project.proposals
   end
 
   def new

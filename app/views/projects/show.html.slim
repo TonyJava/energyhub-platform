@@ -51,6 +51,8 @@ h1= @project.name
         .pull-right
           = link_to 'Destroy', @project, data: { confirm: 'Are you sure?' }, method: :delete
 
+== render 'proposals/proposals', proposals: @proposals
+
 == render 'sites/sites', sites: @sites
 
 == render 'contractors/contractors', contractors: @contractors
