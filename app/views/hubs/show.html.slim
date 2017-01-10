@@ -8,6 +8,9 @@ h1= @hub.name
           tr
             td Percent Fee
             td= @hub.percent_fee
+          tr 
+            td Public Participant Form
+            td= link_to "Link to Form", new_hub_participant_path(hub_id: @hub.id)
         = link_to 'Edit', edit_hub_path(@hub)
         '&nbsp;&nbsp;|
         = link_to 'Back to All Hubs', hubs_path

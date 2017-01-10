@@ -1,6 +1,7 @@
 class Participant < ApplicationRecord
   belongs_to :hub
   has_many :sites, dependent: :nullify
+  accepts_nested_attributes_for :sites
 
   validates :first_name, :last_name, presence: true
 

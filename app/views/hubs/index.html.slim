@@ -8,8 +8,7 @@ h1 Hubs
             tr
               th Name
               th Percent Fee
-              th
-              th
+              th Public Participant Form
               th
 
           tbody
@@ -17,6 +16,7 @@ h1 Hubs
               tr
                 td = link_to hub.name, hub
                 td = hub.percent_fee
+                td = link_to "Link to Form", new_hub_participant_path(hub_id: hub.id)
                 td = link_to 'Edit', edit_hub_path(hub)
 
         br

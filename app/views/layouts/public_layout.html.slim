@@ -1,0 +1,16 @@
+doctype html
+html
+  = render 'partials/head'
+  body
+    #header
+      .color-line
+      #logo class="light-version"
+        span Energy Hub Platform
+
+    #wrapper
+      .content.animate-panel
+        = yield
+        br
+        br
+        footer.footer
+          p class="text-muted text-center" Copyright &copy; Eutectics LLC #{Date.today.year}

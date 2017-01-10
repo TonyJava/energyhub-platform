@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'hubs/:hub_id/participants/new', to: 'participants#new_hub_participant', as: 'new_hub_participant'
+  post 'hubs/:hub_id/participants/new', to: 'participants#create_hub_participant', as: 'create_hub_participant'
+  get 'participant_confirmation', to: 'pages#participant_confirmation'
   resources :proposals
   resources :contractors
   resources :projects

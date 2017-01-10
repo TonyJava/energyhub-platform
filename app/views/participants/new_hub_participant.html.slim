@@ -1,0 +1,56 @@
+h1 New Participant for #{@hub.name}
+= form_for @participant, url: create_hub_participant_path(hub_id: @hub.id), method: :post do |f|
+  - if @participant.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@participant.errors.count, "error")} prohibited this participant from being saved:"
+      ul
+        - @participant.errors.full_messages.each do |message|
+          li = message
+
+  .row 
+    .col-md-8
+      .form-group.required
+        = f.label :first_name, "First Name"
+        = f.text_field :first_name, class: "form-control"
+      .form-group.required
+        = f.label :last_name, "Last Name"
+        = f.text_field :last_name, class: "form-control"
+      .form-group
+        = f.label :email
+        = f.text_field :email, class: "form-control"
+      .form-group
+        = f.label :phone
+        = f.text_field :phone, class: "form-control"
+      .form-group
+        = f.label :organization
+        = f.text_field :organization, class: "form-control"
+      .form-group
+        = f.label :title
+        = f.text_field :title, class: "form-control"
+      = f.fields_for :sites do |site_field|
+        .form-group.required
+          = site_field.label :name, "Potential Project Site Name"
+          = site_field.text_field :name, class: "form-control"
+        .form-group
+          = site_field.label :address_1
+          = site_field.text_field :address_1, class: "form-control"
+        .form-group
+          = site_field.label :address_2
+          = site_field.text_field :address_2, class: "form-control"
+        .form-group.required
+          = site_field.label :city
+          = site_field.text_field :city, class: "form-control"
+        .form-group.required
+          = site_field.label :state
+          = site_field.text_field :state, class: "form-control"
+        .form-group
+          = site_field.label :zip_code, "Zip Code"
+          = site_field.text_field :zip_code, class: "form-control"
+        .form-group.required
+          = site_field.label :property_type, "Property Type"
+          = site_field.select :property_type, options_for_select([['Business', Site::BUSINESS], ['Residential', Site::RESIDENTIAL], ["Municipality / City", Site::MUNICIPALITY], ["Non-Profit / Church", Site::NON_PROFIT], ["Other", Site::OTHER]], @site.property_type), {:prompt => "Please select"}, class: "form-control"
+      .form-group
+        = f.label :notes, "Type of project (solar, energy efficiency, other)? Provide any additional details"
+        = f.text_area :notes, class: "form-control"
+        = f.hidden_field :hub_id, value: params[:hub_id]
+      .actions = f.submit class: "btn btn-primary"
