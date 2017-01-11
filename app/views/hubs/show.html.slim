@@ -17,8 +17,9 @@ h1= @hub.name
         .pull-right
           = link_to 'Destroy', @hub, data: { confirm: 'Are you sure?' }, method: :delete
 
-== render 'projects/projects', projects: @projects
-
 == render 'participants/participants', participants: @participants
 
 == render 'sites/sites', sites: @sites
+
+== render 'projects/projects', projects: @projects
+

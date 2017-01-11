@@ -3,6 +3,8 @@ h1 Sites
   .col-md-12
     .hpanel
       .panel-body
+        .pull-right
+          p= link_to 'New Site', new_site_path
         table.table.table-striped
           thead
             tr
@@ -20,5 +22,3 @@ h1 Sites
               == render 'sites/site', site: site
 
         br
-
-        = link_to 'New Site', new_site_path

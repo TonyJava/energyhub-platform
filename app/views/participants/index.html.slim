@@ -3,9 +3,9 @@ h1 Participants
 .row
   .col-md-12
     .hpanel
-      .panel-heading
-        p Some text about participants
       .panel-body
+        .pull-right
+          p= link_to 'New Participant', new_participant_path
         table.table.table-striped
           thead
             tr
@@ -24,4 +24,3 @@ h1 Participants
 
         br
 
-        = link_to 'New Participant', new_participant_path

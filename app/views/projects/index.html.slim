@@ -3,6 +3,8 @@ h1 Projects
   .col-md-12
     .hpanel
       .panel-body
+        .pull-right
+          p= link_to 'New Project', new_project_path
         table.table.table-striped
           thead
             tr
@@ -18,7 +20,6 @@ h1 Projects
               th Total project cost
               th Fee Invoice Sent?
               th Fee Received?
-              th Notes
               th
 
           tbody
@@ -28,7 +29,6 @@ h1 Projects
                 td = link_to project.hub.name, hub_path(id: project.hub.id) if project.hub
                 td = project.sites.map { |site| link_to site.name, site_path(id: site.id) }.join(', ').html_safe
                 td = project.project_status
-                td = project.intake_path
                 td = project.project_type
                 td = project.solar_estimate
                 td = project.ee_estimate
@@ -37,9 +37,7 @@ h1 Projects
                 td = number_to_currency(project.total_project_cost) if project.total_project_cost
                 td = project.fee_invoice_sent.to_formatted_s(:long) if project.fee_invoice_sent
                 td = project.fee_received.to_formatted_s(:long) if project.fee_received
-                td = project.notes
                 td = link_to 'Edit', edit_project_path(project)
 
         br
 
-        = link_to 'New Project', new_project_path
