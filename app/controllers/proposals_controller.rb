@@ -28,6 +28,6 @@ class ProposalsController < ApplicationController
   end
 
   def proposal_params
-    params.require(:proposal).permit(:accepted?, :proposal_doc, proposal_steps_attributes: [:name, :step_completed, :id])
+    params.require(:proposal).permit(:accepted?, :proposal_doc, :notes, proposal_steps_attributes: [:name, :step_completed, :id])
   end
 end

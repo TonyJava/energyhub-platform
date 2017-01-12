@@ -3,5 +3,5 @@ tr
   td = contractor.contact
   td = contractor.email
   td = contractor.phone
-  td = contractor.states_serviced.map { |state| state }.join(', ')
+  td = contractor.states_serviced.map { |state| state }.join(', ') if contractor.states_serviced
   td = link_to 'Edit', edit_contractor_path(contractor)

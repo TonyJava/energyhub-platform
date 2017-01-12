@@ -46,6 +46,9 @@ h1= @project.name
           tr
             td Proposal doc:
             td= link_to @proposal.proposal_doc, @proposal.proposal_doc, target: '_blank'
+          tr 
+            td Notes
+            td= @proposal.notes
 
         = link_to 'Edit Proposal', edit_proposal_path(@proposal)
         .pull-right
