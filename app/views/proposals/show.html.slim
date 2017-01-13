@@ -47,7 +47,7 @@ h1= @project.name
         table.table.table-bordered.table-striped
           tr
             td Proposal doc:
-            td= link_to @proposal.proposal_doc, @proposal.proposal_doc, target: '_blank'
+            td= link_to @proposal.proposal_doc, @proposal.proposal_doc, target: '_blank' if @proposal.proposal_doc.present?
           tr 
             td Notes
             td= @proposal.notes

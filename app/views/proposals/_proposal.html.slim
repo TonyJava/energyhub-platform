@@ -3,5 +3,5 @@ tr
   td = link_to proposal.project.name, project_path(id: proposal.project.id) if proposal.project.name
   td = proposal.project.project_status
   td = "Yes" if proposal.proposal_steps.where(name: ProposalStep::SELECTED).first.step_completed.present? 
-  td = link_to "Open Proposal Document", proposal.proposal_doc, target: '_blank' if proposal.proposal_doc
+  td = link_to "Open Proposal Document", proposal.proposal_doc, target: '_blank' if proposal.proposal_doc.present?
   td = link_to 'Edit Proposal', edit_proposal_path(proposal)
