@@ -6,4 +6,5 @@ tr
   td = participant.organization
   td = participant.title
   td = participant.notes
+  td = participant.created_at.to_formatted_s(:long)
   td = link_to 'Edit', edit_participant_path(participant)

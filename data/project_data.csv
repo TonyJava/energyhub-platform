@@ -1,6 +1,204 @@
-contractor_name,hub,site_name,organization,title,first_name,last_name,phone_number,email,comments text (participant),notes_participant,address_1,address_2,city,state,zip_code,property_type,project_name,project_type,Initiated (Proposal Step),Proposal Presented (proposal Step),"Closed, Not Selected",Selected,project_status
-Noble Conservation Solutions,Chisago,MultiSource Manufacturing,,GM,Marlys,Dunne,651-257-9463,mdunne@multisourcemfg.com,,Al Kaari - 651-257-9463 - akaari@multisourcemfg.com,10489 Liberty Ln,,Chisago City,MN,,Business,MultiSource Manufacturing,Energy Efficiency,8/26/2016,9/26/2016,,,Active
-Noble Conservation Solutions,Chisago,Branch Landscape,,,Eric ,Fustafson,651-208-1473,eric@branchland.com,,,7009 372nd Str,,North Branch,MN,,Business,Branch Landscape,Energy Efficiency,7/20/2016,,,,Active
-Noble Conservation Solutions,Chisago,Clubhouse Golf Grill,,,Todd,Kueppers,651-257-6024,tkueppers@chisagolakesgolf.com,,,12975 292nd Str,,Lindstrom,MN,,Business,Clubhouse Golf Grill,Energy Efficiency,7/21/2016,,,,Active
-Noble Conservation Solutions,Chisago,Veritas Chapel,,,Steven,Brooks,763-670-0793,sjbrooks@veritasclassical.org,,,34888 Kable Ave,,North Branch,MN,,Non-Profit / Church,Veritas Chapel,Energy Efficiency,7/20/2016,,,,Active
-Noble Conservation Solutions,Chisago,Trinity Lutheran Church,,,George,Popa,651-257-5129,gpopa@1017@gmail.com,,,13025 Newell Ave,,Lindstrom,MN,,Non-Profit / Church,Trinity Lutheran Church,Energy Efficiency,8/22/2016,10/11/2016,,,Active
+contractor_name,hub,site_name,organization,title,first_name,last_name,phone_number,email,comments text (participant),notes_participant,address_1,address_2,city,state,zip_code,property_type,project_name,project_type,proposal_step_initiated,proposal_step_presented,proposal_step_closed,proposal_step_selected,project_status
+All Energy Solar,Chisago,"8010 275th Ave NE 
+",,,Tom,Anderson,651-408-8403,,,,"8010 275th Ave NE 
+",,North Branch,MN,55056,Residential,"Solar - 8010 275th Ave NE 
+",Solar,9/15/2016,,,,Active
+All Energy Solar,Chisago,Gary Anderson Site (get info),,,Gary ,Anderson,(651) 257-2467,,,"and Bonnie.  · (612) 910-8805 (m)
+brinkanderson@gmail.com",,,Lindstrom,MN,,Residential,Solar - Gary Anderson Site (get info),Solar,11/7/2016,,,,Active
+All Energy Solar,Chisago,Jill Behnke Home,,,Jill ,Behnke,,,,,get Info,,Center City,MN,,Residential,Solar - Jill Behnke Home Project,Solar,10/20/2016,,,,complete
+All Energy Solar,Chisago,Veritas Chapel ,,,Steven,Brooks,763-670-0793,sjbrooks@veritasclassical.org,,,"34888 Kable Ave 
+",,North Branch,MN,55056,nonprofit,"Solar - 34888 Kable Ave 
+",Solar,7/18/2016,,,,Active
+All Energy Solar,Chisago,443 Briar Ln,,,Dorothy ,Chrun,651-465-6627,,,Michael,443 Briar Ln,,Taylors Falls,MN,55084,Residential,Solar - 443 Briar Ln,Solar,10/6/2016,,,,Active
+All Energy Solar,Chisago,"27465 Leah Ln 
+",,,Jack ,Doepke,651-260-0550,,,,"27465 Leah Ln 
+",,Chisago City,MN,55013,Residential,"Solar - 27465 Leah Ln 
+",Solar,7/29/2016,8/9/2016,,,Active
+All Energy Solar,Chisago,"32561 Redwing Ave 
+",,,Joy ,Fusco,651-357-5243,joyfusco5@gmail.com,,,"32561 Redwing Ave 
+",,Shafer,MN,55074,Residential,"Solar - 32561 Redwing Ave 
+",Solar,2/6/2015,,,,Active
+All Energy Solar,Chisago,Thrifty White Pharmacy,,,Mathew ,Garrison,651-257-4074 ,mjgarrison88@gmail.com,,,"30699 Lincoln Road
+",,Lindstrom,MN,55045,Commericial,"Solar - 30699 Lincoln Rd
+",Solar,,,,,Active
+All Energy Solar,Chisago,11454 Loftman Trail,,,Peter ,Genheimer,,,,,11454 Loftman Trail,,North Branch,MN,55056,Residential,Solar - 11454 Loftman Trail,Solar,7/21/2016,7/27/2016,,8/5/2016,Active
+All Energy Solar,Chisago,North Branch Landscape Nursery,,,Eric ,Gustafson,651-208-1473,,,,"7009 372nd st, ",,North Branch,MN,55056,Commericial,"Solar - 7009 372nd st, ",Solar,7/18/2016,7/25/2016,,,Active
+All Energy Solar,Chisago,"21055 Victory Ln 
+",,,Kimberly,Jinks,651-402-2831,,,,"21055 Victory Ln 
+",,Taylors Falls,MN,55084,Residential,"Solar - 21055 Victory Ln 
+",Solar,6/28/2016,7/8/2016,,,Active
+All Energy Solar,Chisago,891 West St.,,,Melba ,Johnson,651-315-1222,,,,891 West St.,,Taylors Falls,MN,55084,Residential,Solar - 891 West St.,Solar,10/6/2016,,,,Active
+All Energy Solar,Chisago,MultiSource Manufacturing,,,Al ,Kaari,651-257-9463 ext.111 ,akaari@multisourcemfg.com,,,"10489 Liberty Ln 
+",,Chisago City,MN,55013,Commericial,"Solar - 10489 Liberty Ln 
+",Solar,8/29/2016,,,,Active
+All Energy Solar,Chisago,17579 309th Ct.,,,Robert,Kabat,,,,alt:  & Dionne ,17579 309th Ct.,,Shafer,MN,55074,Residential,Solar - 17579 309th Ct.,Solar,1/20/2016,1/21/2016,,1/21/2016,Active
+All Energy Solar,Chisago,26519 Lofton Ave,,,Roger ,Kaske,,,,,26519 Lofton Ave,,Chisago City,MN,55013,Residential,Solar - 26519 Lofton Ave,Solar,2/1/2016,2/4/2016,,2/14/2016,Active
+All Energy Solar,Chisago,31468 Maria Ave ,,,Susan ,Kirchner ,6512710513,Tomkirch@gmail.com,,,"31468 Maria Ave 
+",,Lindstrom,MN,55045,Residential,Solar - 31468 Maria Ave ,Solar,,,,,Active
+All Energy Solar,Chisago,Lake Area Bank ,,,Randy,Leiter,651-260-7903,rleither@lakeareabank.com,,,"12790 First Ave N 
+",,Lindstrom,MN,55045,Commericial,"Solar - 12790 First Ave N 
+",Solar,9/15/2016,,,,Active
+All Energy Solar,Chisago,"27380 Lofton Ave 
+",,,Herb ,Letourneau,651-325-7065 ,herb651@frontiernet.net,,,"27380 Lofton Ave 
+",,Chisago City,MN,55013,Residential,"Solar - 27380 Lofton Ave 
+",Solar,7/18/2016,,,,Active
+All Energy Solar,Chisago,313 Norman Ln,,,Jim ,Marxer ,(651) 398-4688 (m),jmarxer@lakesservices.com,,,313 Norman Ln,,Center City,MN,,Residential,Solar - 313 Norman Ln,Solar,11/7/2016,,,,Active
+All Energy Solar,Chisago,30275 Norway Ave.,,,Jim ,McCarville,651-257-8939,,,,30275 Norway Ave.,,Lindstrom,MN,55045,Residential,Solar - 30275 Norway Ave.,Solar,10/6/2016,10/19/2016,,,Active
+All Energy Solar,Chisago,"362 Briar Ln 
+",,,Nina,McDowell,651-399-8649,,,,"362 Briar Ln 
+",,Taylors Falls,MN,55084,Residential,Solar - 362 Briar Ln ,Solar,8/9/2016,,,,Active
+All Energy Solar,Chisago,"2629 Crestview Rd 
+",,,Heather,Minke,651-497-0884,,,,"2629 Crestview Rd 
+",,Harris,MN,55032,Residential,"Solar - 2629 Crestview Rd 
+",Solar,7/18/2016,,,,Active
+All Energy Solar,Chisago,"30615 Maple St, ",,,John ,Olinger,651-325-6071,,,,"30615 Maple St, ",,Lindstrom,MN,55045,Residential,"Solar - 30615 Maple St, ",Solar,8/20/2016,9/15/2016,,,Active
+All Energy Solar,Chisago,Chisago City Hall,Chisago City,City Administrator,John ,Pechman ,651-257-7634,jpechman@ci.chisago.mn.us,,,10625 Railroad Ave.,,Chisago City,MN,55013,Public,Solar - 10625 Railroad Ave.,Solar,,,,,Active
+All Energy Solar,Chisago,117985 Lake Lawn Dr.,,,Kim ,Rathsack,920-716-6016,,,,117985 Lake Lawn Dr.,,Lindstrom,MN,55045,Residential,Solar - 117985 Lake Lawn Dr.,Solar,10/6/2016,,,,Active
+All Energy Solar,Chisago,"9792 302nd st, ",,,Michael ,Rimstead,,,,,"9792 302nd st, ",,Chisago City,MN,,Residential,"Solar - 9792 302nd st, ",Solar,10/17/2016,,,,Active
+All Energy Solar,Chisago,11465 Interlachen Rd,,,Scott ,Ross,612-991-7397,,,,11465 Interlachen Rd,,Chisago City,MN,55013,Residential,Solar - 11465 Interlachen Rd,Solar,10/6/2016,,,,Active
+All Energy Solar,Chisago,"33115 Nueman Trl 
+",,,Carl ,Savaiano,651-257-1400,,,,"33115 Nueman Trl 
+",,Lindstrom,MN,55045,Residential,"Solar - 33115 Nueman Trl 
+",Solar,7/25/2016,7/28/2016,,,Active
+All Energy Solar,Chisago,Lindstrom Chiropractic Center,,,Rob ,Waddell ,651-257-1103,contact@lindstromchiro.com,,,"12099 Lindstrom Ln 
+",,Lindstrom,MN,55045,Commericial,"Solar - 12099 Lindstrom Ln 
+",Solar,9/22/2016,10/5/2016,,,Active
+All Energy Solar,Chisago,35897 Oxford Ave.,,,Ed ,Wakefield,,,,,35897 Oxford Ave.,,Center City,MN,55012,Residential,Solar - 35897 Oxford Ave.,Solar,1/20/2016,1/28/2016,,2/15/2016,Active
+All Energy Solar,Chisago,"7397 386th St 
+",,,Jeremy ,Witkowski,651-318-8504,,,,"7397 386th St 
+",,North Branch,MN,55056,Residential,"Solar - 7397 386th St 
+",Solar,7/25/2016,,,,Active
+Cedar Creek Energy,Chisago,A Vine Thing,,,Get Info,A Vine Thing,,,,,32690 Oasis Rd,,Center City,MN,,Commericial,Solar - 32690 Oasis Rd,Solar,,,,,Active
+Cedar Creek Energy,Chisago,34888 Oasis Rd,,,Gary,Anderson,(651) 257-2467,brinkanderson@gmail.com,,Bonnie Anderson. (612) 910-8805 (m),34888 Oasis Rd,,Lindstrom,MN,,Residential,Solar - 34888 Oasis Rd,Solar,9/7/2016,,,,Active
+Cedar Creek Energy,Chisago,Bob's Cycle Supply,,,Get Info,Bob's Cycle Supply,,,,,29800 Habel Ln,,Chisago City,MN,,Commericial,EE - 29800 Habel Ln,Energy Efficiency,,5/25/2016,,,Active
+Cedar Creek Energy,Chisago,Brinks Market,,,Get Info,Brinks Market,,,,,11460 Brink Ave,,Chisago City,MN,,Commericial,Solar - 11460 Brink Ave,Solar,,8/5/2016,,,Active
+Cedar Creek Energy,Chisago,Glan Buss Site,,,Glan,Buss,(763) 639-9636,glenbuss@hotmail.com,,(612) 618-8738 (m),2689 118th Cir NE,,Blaine,MN,55449,Residential,Other - 2689 118th Cir NE,Other,,,,,Active
+Cedar Creek Energy,Chisago,Carlson BP,,,Get Info,Carlson BP,,,,,13261 St Croix Ave,,Lindstrom,MN,,Commericial,Solar - 13261 St Croix Ave,Solar,,6/7/2016,,,Active
+Cedar Creek Energy,Chisago,30430 Park Stret,,,Judy,Chartrand,,,,,30430 Park Stret,,Lindstrom,MN,,Residential,Other - 30430 Park Stret,Other,,,,,Active
+Cedar Creek Energy,Chisago,Chisago Hardware,,,Marcus,Clay,651-257-4134,chisagohardware@frontiernet.net,,,10680 South Ave,,Chisago City,MN,,Commericial,Solar - 10680 South Ave,Solar,12/13/2016,,,,Active
+Cedar Creek Energy,Chisago,Cottage Bed & Breakfast,,,Eleanore ,Collins,(651) 465-3595,cottage12@frontiernet.net,,,950 Fox Glen Rd,,Taylors Falls,MN,83864,Commericial,Solar - 950 Fox Glen Rd,Solar,7/26/2016,,,,Active
+Cedar Creek Energy,Chisago,Dougs TV,,,Get Info,Dougs TV,,,,,10570 South Ave,,Chisago City,MN,,Commericial,Solar - 10570 South Ave,Solar,,6/7/2016,,,Active
+Cedar Creek Energy,Chisago,Napa Auto Parts,,,Brian,Dreckman,651-325-1103,nabpco@frontiernet.net,,,30689 Lincoln Rd,,Lindstrom,MN,,Commericial,EE - 30689 Lincoln Rd,Energy Efficiency,12/13/2016,,,,Active
+Cedar Creek Energy,Chisago,MultiSource Manufacturing ,,GM,Marlys,Dunne,651-257-9463,mdunne@multisourcemfg.com,,"Al Kaari , 651-257-9463, akaari@multisourcemfg.com",10489 Liberty Ln,,Chisago City,MN,,Commericial,EE - 10489 Liberty Ln,Energy Efficiency,4/12/2016,2/18/2016,8/31/2016,,Active
+Cedar Creek Energy,Chisago,11405 Interlachen RD,,,Marlys,Dunne,651-257-9463,mdunne@multisourcemfg.com,,,11405 Interlachen RD,,Chisago City,MN,,Residential,Solar - 11405 Interlachen RD,Solar,10/7/2016,,10/20/2016,,Active
+Cedar Creek Energy,Chisago,"Regal Machine, Inc.",,President,Greg,Evgen,651-408-8940,greg@regalmachineinc.com,,,5103 273rd Street,,Wyoming,MN,,Commericial,Solar - 5103 273rd Street,Solar,8/31/2016,,9/22/2016,,Active
+Cedar Creek Energy,Chisago,Next Generation,,,Josh,Fagan,651-325-5875,jafagan1@gmail.com,,,11183 Lake Blvd,,Lindstrom,MN,,Commericial,EE - 11183 Lake Blvd,Energy Efficiency,12/13/2016,,,,Active
+Cedar Creek Energy,Chisago,Franconia Sculpture Park,,,Get Info,Franconia Sculpture Park,,,,,29836 St. Croix Trl,,Shafer,MN,,nonprofit,Solar - 29836 St. Croix Trl,Solar,4/12/2016,2/22/2016,,,Active
+Cedar Creek Energy,Chisago,Frankie's ,,,Get Info,Frankie's ,,,,,10680 South Ave,,Chisago City,MN,,Commericial,Solar - 10680 South Ave,Solar,,9/9/2016,,,Active
+Cedar Creek Energy,Chisago,Wild  Mountain,,,Amy,Frischmon,,,,,37200 Wild Mtn. Rd,,Taylors Falls,MN,,Commericial,Solar - 37200 Wild Mtn. Rd,Solar,4/12/2016,4/28/2016,,,Active
+Cedar Creek Energy,Chisago,Wild Mountain,,,Amy,Frischmon,,,,,37200 WIld Mtn. Rd,,Taylors Falls,MN,,Commericial,EE - 37200 WIld Mtn. Rd,Energy Efficiency,4/12/2016,4/28/2016,,,Active
+Cedar Creek Energy,Chisago,32561 Redwing Ave,,,Joy,Fusco,,,,,32561 Redwing Ave,,Shafer,MN,,Residential,Solar - 32561 Redwing Ave,Solar,10/20/2016,,,,Active
+Cedar Creek Energy,Chisago,Thrifty White Pharmacy,,,Matthew,Garrison,651-257-4074,mjgarrison@gmail.com,,,30699 Lincoln Rd,,Lindstrom,MN,,Commericial,Solar - 30699 Lincoln Rd,Solar,12/13/2016,,,,Active
+Cedar Creek Energy,Chisago,Grandstay Hotel,,,Get Info,Grandstay Hotel,,,,,29579 Sportsman Dr,,Chisago City,MN,,Commericial,Solar - 29579 Sportsman Dr,Solar,,6/7/2016,,,Active
+Cedar Creek Energy,Chisago,"Bayview Senior Living Apartments 
+",Chisago HRA,,Nancy,Hoffman,,,,,320 Center Ave,,Center City,MN,,Public,EE - 320 Center Ave,Energy Efficiency,,9/8/2016,,,Active
+Cedar Creek Energy,Chisago,Wyoming Oakwood,Chisago HRA,,Nancy,Hoffman,,,,,26890 Goldman Blvd,,Wyoming,MN,,Public,EE - 26890 Goldman Blvd,Energy Efficiency,4/12/2016,9/8/2016,5/16/2016,,Active
+Cedar Creek Energy,Chisago,Countryside,Chisago HRA,,Nancy,Hoffman,,,,,740 W 14th St,,Rush City,MN,,Public,EE - 740 W 14th St,Energy Efficiency,,9/8/2016,,,Active
+Cedar Creek Energy,Chisago,Chisago County HRA-EDA,Chisago HRA,,Nancy,Hoffman,,,,,38871 7th Ave,,North Branch,MN,,Public,EE - 38871 7th Ave,Energy Efficiency,,9/8/2016,,,Active
+Cedar Creek Energy,Chisago,Rush Estates,Chisago HRA,,Nancy,Hoffman,,,,,100 N. Elliot Ave,,Rush City,MN,,Public,EE - 100 N. Elliot Ave,Energy Efficiency,,9/8/2016,,,Active
+Cedar Creek Energy,Chisago,Wyoming Oakwood,Chisago HRA,,Nancy,Hoffman,,,,,26890 Goldman Blvd,,Wyoming,MN,,Public,EE - 26890 Goldman Blvd,Energy Efficiency,4/12/2016,9/8/2016,5/16/2016,,Active
+Cedar Creek Energy,Chisago,Anytime Fitness,,,Rose,Jesmer,651-257-1901,chisago@anytimefitness.com,,,11183 Lake Blvd.,,Lindstrom,MN,,Commericial,Other - 11183 Lake Blvd.,Other,12/13/2016,,,,Active
+Cedar Creek Energy,Chisago,Lindstrom Office Center,,,Randy,Kempenich,,,,,12732 Lake Blvd,,Lindstrom,MN,,Commericial,Solar - 12732 Lake Blvd,Solar,6/22/2016,,9/22/2016,,Active
+Cedar Creek Energy,Chisago,Lindstrom Office Center,,,Randy,Kempenich,,,,,12732 Lake Blvd,,Lindstrom,MN,,Commericial,EE - 12732 Lake Blvd,Energy Efficiency,6/22/2016,,9/22/2016,,Active
+Cedar Creek Energy,Chisago,31468 Maria Ave,,,Susan,Kirchner,6512710513,Tomkirch@gmail.com,,,31468 Maria Ave,,Lindstrom,MN,55045,Residential,Other - 31468 Maria Ave,Other,,,,,Active
+Cedar Creek Energy,Chisago,Lindstrom Hardware Do it Right,,,Get Info,Lindstrom Hardware Do it Right,,,,,30482 Park St,,Lindstrom,MN,,Commericial,Solar - 30482 Park St,Solar,,8/12/2016,,,Active
+Cedar Creek Energy,Chisago,Lindstrom Hardware Do it Right,,,Get Info,Lindstrom Hardware Do it Right,,,,,30482 Park St,,Lindstrom,MN,,Commericial,EE - 30482 Park St,Energy Efficiency,,8/12/2016,,,Active
+Cedar Creek Energy,Chisago,313 Norman Ln,,,Jim,Marxer,(651) 398-4688 (m),jmarxer@lakesservices.com,,,313 Norman Ln,,Center City,MN,,Residential,Other - 313 Norman Ln,Other,,,,,Active
+Cedar Creek Energy,Chisago,Northern Bar & Grill,,,Get Info,Northern Bar & Grill,,,,,10470 South Ave,,Chisago City,MN,,Commericial,EE - 10470 South Ave,Energy Efficiency,,7/14/2016,,,Active
+Cedar Creek Energy,Chisago,Northern Bar & Grill,,,Get Info,Northern Bar & Grill,,,,,10470 South Ave,,Chisago City,MN,,Commericial,Solar - 10470 South Ave,Solar,,7/14/2016,,,Active
+Cedar Creek Energy,Chisago,Johanna O'Malley Site,,,Johanna,O'Malley,,,,,Address,,City,MN,,Residential,Other - Johanna O'Malley Project,Other,6/22/2016,,,,Active
+Cedar Creek Energy,Chisago,30615 Maple St ,,,John,Olinger,,,,,30615 Maple St ,,Lindstrom,MN,55045,Residential,Other - 30615 Maple St ,Other,,,,,Active
+Cedar Creek Energy,Chisago,11325 Interlachen Rd,,,Gregg,Paine,,,,,11325 Interlachen Rd,,Chisago City,MN,,Residential,Other - 11325 Interlachen Rd,Other,,,,,Active
+Cedar Creek Energy,Chisago,Chisago City Hall,City of Chisago City,Chisago City Adminstrator,John ,Pechman,651-257-7634,jpechman@ci.chisago.mn.us,,,10625 Railroad Ave.,,Chisago City,MN,55013,public,Other - 10625 Railroad Ave.,Other,,,,,Active
+Cedar Creek Energy,Chisago,Wendy Redland Home,,,Wendy ,Redland,,,,,Get Info (Wendy Redland),,City,MN,,Residential,Solar - Wendy Redland Home,Solar,6/22/2016,,11/3/2016,,Inactive
+Cedar Creek Energy,Chisago,Northwoods Roasterie,,,John ,Renaker,,,,,12710 N 1st Ave N,,Lindstrom,MN,,Commericial,EE - 12710 N 1st Ave N,Energy Efficiency,,2/17/2016,,5/5/2016,complete
+Cedar Creek Energy,Chisago,Northwoods Roasterie,,,John ,Renaker,,,,,12710 N 1st Ave N,,Lindstrom,MN,,Commericial,Solar - 12710 N 1st Ave N,Solar,,2/17/2016,,,inactive
+Cedar Creek Energy,Chisago,9792 302nd St,,,Michael,Rimstad,,,,,9792 302nd St,,Chisago City,MN,,Residential,Solar - 9792 302nd St,Solar,10/20/2016,,,,Active
+Cedar Creek Energy,Chisago,Rods Berry Farm,,,Get Info,Rods Berry Farm,,,,,28624 Zodiac St NE,,North Branch,MN,,Commericial,Other - 28624 Zodiac St NE,Other,,,,,Active
+Cedar Creek Energy,Chisago,Almelund Mercantile,,,Susie,Sandberg,,,,,15790 Maple Ln,,Center City,MN,,Commericial,Solar - 15790 Maple Ln,Solar,6/22/2016,,9/22/2016,,Active
+Cedar Creek Energy,Chisago,31095 Lincoln Rd,,,Tammy,Smith,,,,,31095 Lincoln Rd,,Lindstrom,MN,,Residential,Other - 31095 Lincoln Rd,Other,,,,,Active
+Cedar Creek Energy,Chisago,Red Key Realty,,,Peter ,Smothers,651-210-8860,petersmothers@gmail.com,,,11878 Lake Lane,,Lindstrom,MN,,Commericial,Solar - 11878 Lake Lane,Solar,12/13/2016,,12/12/2016,,Active
+Cedar Creek Energy,Chisago,Red Key Realty,,,Peter ,Smothers,651-210-8860,petersmothers@gmail.com,,,11878 Lake Lane,,Lindstrom,MN,,Commericial,EE - 11878 Lake Lane,Energy Efficiency,12/13/2016,,12/12/2016,,Active
+Cedar Creek Energy,Chisago,Split Rocks Entertainment,,,Get Info,Split Rocks Entertainment,,,,,273rd St,,Wyoming,MN,,Commericial,Solar - 273rd St,Solar,9/22/2016,,,,Active
+Cedar Creek Energy,Chisago,Split Rocks Entertainment,,,Get Info,Split Rocks Entertainment,,,,,273rd St,,Wyoming,MN,,Commericial,EE - 273rd St,Energy Efficiency,9/22/2016,,,,Active
+Cedar Creek Energy,Chisago,Lakes Free Church,,,Ric ,Stanghelle,,,,,29620 Olinda Trl,,Lindstrom,MN,,nonprofit,EE - 29620 Olinda Trl,Energy Efficiency,6/22/2016,8/4/2016,9/1/2016,,Active
+Cedar Creek Energy,Chisago,Lakes Free Church,,,Ric ,Stanghelle,,,,,29620 Olinda Trl,,Lindstrom,MN,,nonprofit,Solar - 29620 Olinda Trl,Solar,6/22/2016,8/4/2016,9/1/2016,,Active
+Cedar Creek Energy,Chisago,State Farm Office,,,Get Info,State Farm Office,,,,,12805 Lake Blvd,,Lindstrom,MN,,Commericial,Other - 12805 Lake Blvd,Other,6/22/2016,,,,Active
+Cedar Creek Energy,Chisago,Stein Insurance,,,Jim,Stein,651-257-1042,jim@steininsurance.com,,deb@steininsurance.com,1280 Lake Blvd,,Lindstrom,MN,,Commericial,Solar - 1280 Lake Blvd,Solar,7/30/2016,8/18/2016,,8/26/2016,complete
+Cedar Creek Energy,Chisago,Stein Insurance,,,Jim,Stein,651-257-1042,jim@steininsurance.com,,deb@steininsurance.com,1280 Lake Blvd,,Lindstrom,MN,,Commericial,EE - 1280 Lake Blvd,Energy Efficiency,7/30/2016,8/18/2016,,8/26/2016,complete
+Cedar Creek Energy,Chisago,1000 Fox Glen Drive,,,Jim,Stein,651-257-1042,jim@steininsurance.com,,deb@steininsurance.com,1000 Fox Glen Drive,,Taylors Falls,MN,,Residential,Solar - 1000 Fox Glen Drive,Solar,10/20/2016,,,,Active
+Cedar Creek Energy,Chisago,Sven's Shoes,,,Get Info,Sven's Shoes,,,,,10000 Lake Blvd,,Chisago City,MN,,Commericial,Other - 10000 Lake Blvd,Other,,9/22/2016,,,Active
+Cedar Creek Energy,Chisago,City of Shafer (multi),City of Shafer,Mayor,Daniel,Vogel,(651) 308-9068,danvogel1954@gmail.com,,,get info,,Shafer,MN,55074,public,Other - Shafer Get Info,Other,,,,,Active
+Cedar Creek Energy,Chisago,12685 Newell Ave,,,Pat,Wahlgren,651-257-6616,,,,12685 Newell Ave,,Lindstrom,MN,,Commericial,Other - 12685 Newell Ave,Other,,,,,Active
+Cedar Creek Energy,Chisago,Grandstrand Funeral Home,,,Tom,Wilson,651-257-4000,tom.wilson@grandstrandfh.com,,,11900 Lake Lane,,Lindstrom,MN,,Commericial,Solar - 11900 Lake Lane,Solar,12/13/2016,,,,Active
+Cedar Creek Energy,Chisago,Grandstrand Funeral Home,,,Tom,Wilson,651-257-4000,tom.wilson@grandstrandfh.com,,,11900 Lake Lane,,Lindstrom,MN,,Commericial,EE - 11900 Lake Lane,Energy Efficiency,12/13/2016,,,,Active
+Cedar Creek Energy,Chisago,Security State Bank of Marine,,,Adam,Wojtowicz,,,,,30626 Lincoln Rd,,Lindstrom,MN,,Commericial,Solar - 30626 Lincoln Rd,Solar,6/22/2016,,,,Inactive
+Home Energy Squad,Chisago,28196 Lakelawn Ct,,,Joyce A ,Anastasi,,,,,28196 Lakelawn Ct,,Lindstrom,MN,55045,Residential,EE - 28196 Lakelawn Ct,Energy Efficiency,,,,10/15/2016,Complete
+Home Energy Squad,Chisago,34888 Oasis Road,,,Gary/Bonnie ,Anderson,,,,,34888 Oasis Road,,Lindstrom,MN,55045,Residential,EE - 34888 Oasis Road,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,501 Park Island Rd,,,Jill M ,Behnke,,,,,501 Park Island Rd,,Center City,MN,55012,Residential,EE - 501 Park Island Rd,Energy Efficiency,,,,10/15/2016,Complete
+Home Energy Squad,Chisago,27369 Leah Ln,,,Curtis ,Bennett,,,,,27369 Leah Ln,,Chisago City,MN,55013,Residential,EE - 27369 Leah Ln,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,9984 Bonnie Glen Parkway,,,Gene ,Berglund,,,,,9984 Bonnie Glen Parkway,,Chisago City,MN,55013,Residential,EE - 9984 Bonnie Glen Parkway,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,30195 Terryll St,,,Julie ,Boldt,,,,,30195 Terryll St,,Lindstrom,MN,55045,Residential,EE - 30195 Terryll St,Energy Efficiency,,,,2/15/2016,Active
+Home Energy Squad,Chisago,10096 Kismet Isle,,,David S ,Carlson,,,,,10096 Kismet Isle,,Chisago City,MN,55013,Residential,EE - 10096 Kismet Isle,Energy Efficiency,,,,10/15/2016,Complete
+Home Energy Squad,Chisago,30985 Irene Ave,,,Gregg K ,Carlson,,,,,30985 Irene Ave,,Lindstrom,MN,55045,Residential,EE - 30985 Irene Ave,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,30430 Park St,,,Judy,Chartrand,,,,,30430 Park St,,Lindstrom,MN,55045,Residential,EE - 30430 Park St,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,443 Briar Ln,,,Dorothy ,Chrun,651-465-6627,,,Michael,443 Briar Ln,,Taylors Falls,MN,55084,Residential,EE - 443 Briar Ln,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,9041 Lake Blvd,,,David J ,Fleming,,,,,9041 Lake Blvd,,Chisago City,MN,55013,Residential,EE - 9041 Lake Blvd,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,400 Military Road,,,Stephen ,Gall,,,,,400 Military Road,,Taylors Falls,MN,55084,Residential,EE - 400 Military Road,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,Triple Glen Farms,,,Triple ,Glen Farms (get info),,,,,500 Herberg Rd,,Taylors Falls,MN,55084,Residential,EE - 500 Herberg Rd,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,10615 Stinson Ave,,,Nancy Taylor ,Greene,,,,,10615 Stinson Ave,,Chisago City,MN,55013,Residential,EE - 10615 Stinson Ave,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,30784 Marigold Lane,,,Larry ,Guilfoile,,,,,30784 Marigold Lane,,Lindstrom,MN,55045,Residential,EE - 30784 Marigold Lane,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,30820 Mattson Ln,,,Bruce R ,Hafften,,,,,30820 Mattson Ln,,Chisago City,MN,55013,Residential,EE - 30820 Mattson Ln,Energy Efficiency,,,,10/15/2016,Complete
+Home Energy Squad,Chisago,34219 Malmberg Ave,,,Robert,Haskin,,,,and Tieran A,34219 Malmberg Ave,,Lindstrom,MN,55045,Residential,EE - 34219 Malmberg Ave,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,13241 Cedar Ridge Ln,,,Kerri L ,Higgins,,,,,13241 Cedar Ridge Ln,,Lindstrom,MN,55045,Residential,EE - 13241 Cedar Ridge Ln,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,24296 Miller Ave,,,John ,Hoffman (import tag),,,,,24296 Miller Ave,,Chisago City,MN,55013,Residential,EE - 24296 Miller Ave,Energy Efficiency,,,,1/15/2016,Active
+Home Energy Squad,Chisago,18101 285 th St,,,Alan ,Honn,612-242-4998,ableminds1@earthlink.net,,,18101 285 th St,,Shafer,MN,55074,Residential,EE - 18101 285 th St,Energy Efficiency,,,,1/15/2016,Active
+Home Energy Squad,Chisago,688 Grand Ave,,,Larry J ,Houger,,,,,688 Grand Ave,,Center City,MN,55012,Residential,EE - 688 Grand Ave,Energy Efficiency,,,,10/15/2016,Complete
+Home Energy Squad,Chisago,41421 Ferry Rd,,,Janel N ,Jacobson,,,,,41421 Ferry Rd,,Sunrise,MN,55032,Residential,EE - 41421 Ferry Rd,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,26519 Lofton Ave,,,Roger,Kaske,,,,,26519 Lofton Ave,,Chisago City,MN,55013,Residential,EE - 26519 Lofton Ave,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,7149 378th St,,,Kirsten H ,Kennedy,,,,,7149 378th St,,North Branch,MN,55056,Residential,EE - 7149 378th St,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,30010 Norelius Dr,,,Stephen ,Levey,,,,,30010 Norelius Dr,,Lindstrom,MN,55045,Residential,EE - 30010 Norelius Dr,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,30735 Maple St,,,Mary D ,Linehan,,,,,30735 Maple St,,Lindstrom,MN,55045,Residential,EE - 30735 Maple St,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,30275 Norway Ave,,,James Wm ,Mc Carville,,,,,30275 Norway Ave,,Lindstrom,MN,55045,Residential,EE - 30275 Norway Ave,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,30000 Norelius Dr,,,Liz ,Murphy,,,,,30000 Norelius Dr,,Lindstrom,MN,55045,Residential,EE - 30000 Norelius Dr,Energy Efficiency,,,,1/15/2016,Active
+Home Energy Squad,Chisago,12402 288th St,,,James K ,Nelson,,,,,12402 288th St,,Lindstrom,MN,55045,Residential,EE - 12402 288th St,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,30615 Maple St,,,Rebecca L ,Olinger,,,,,30615 Maple St,,Lindstrom,MN,55045,Residential,EE - 30615 Maple St,Energy Efficiency,,,,10/15/2016,Complete
+Home Energy Squad,Chisago,11325 Interlachen Rd,,,Gregg,Paine,,,,Tanya L ,11325 Interlachen Rd,,Chisago City,MN,55013,Residential,EE - 11325 Interlachen Rd,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,11895 256th St,,,Nancy A ,Peregrine,,,,,11895 256th St,,Chisago City,MN,55013,Residential,EE - 11895 256th St,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,14998 322nd St,,,Robin ,Persons,,,,,14998 322nd St,,Center City,MN,55012,Residential,EE - 14998 322nd St,Energy Efficiency,,,,2/15/2016,Active
+Home Energy Squad,Chisago,16270 280th St,,,Robert A ,Randall,,,,,16270 280th St,,Center City,MN,55012,Residential,EE - 16270 280th St,Energy Efficiency,,,,10/15/2016,Complete
+Home Energy Squad,Chisago,27985 Lakelawn Dr,,,Kim Shafer ,Rathsack,,,,,27985 Lakelawn Dr,,Lindstrom,MN,55045,Residential,EE - 27985 Lakelawn Dr,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,11395 Lakeview Road,,,Mary ,Redgrave,,,,,11395 Lakeview Road,,Chisago City,MN,55013,Residential,EE - 11395 Lakeview Road,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,15405 310th St,,,Dee ,Reilly,,,,,15405 310th St,,Center City,MN,55012,Residential,EE - 15405 310th St,Energy Efficiency,,,,1/15/2016,Active
+Home Energy Squad,Chisago,10609 Point Pleasant Rd,,,Lorraine K ,Skordahl,,,,,10609 Point Pleasant Rd,,Chisago City,MN,55013,Residential,EE - 10609 Point Pleasant Rd,Energy Efficiency,,,,10/15/2016,Complete
+Home Energy Squad,Chisago,10730 Stinson Ave,,,Matt ,Steenson,,,,,10730 Stinson Ave,,Chisago City,MN,55013,Residential,EE - 10730 Stinson Ave,Energy Efficiency,,,,1/15/2016,Active
+Home Energy Squad,Chisago,1000 Fox Glen Dr,,,Jim,Stein,651-257-1042,jim@steininsurance.com,,deb@steininsurance.com,1000 Fox Glen Dr,,Taylors Falls,MN,55084,Residential,EE - 1000 Fox Glen Dr,Energy Efficiency,,,,10/15/2016,Complete
+Home Energy Squad,Chisago,30865 Elm St,,,Craig ,Stockel,,,,,30865 Elm St,,Lindstrom,MN,55045,Residential,EE - 30865 Elm St,Energy Efficiency,,,,1/15/2016,Active
+Home Energy Squad,Chisago,30167 Olinda Trail,,,Michelle ,Thompson,,,,,30167 Olinda Trail,,Lindstrom,MN,55045,Residential,EE - 30167 Olinda Trail,Energy Efficiency,,,,1/15/2016,Active
+Home Energy Squad,Chisago,29035 Summer St,,,Matthew ,Unruh,,,,,29035 Summer St,,Shafer,MN,55074,Residential,EE - 29035 Summer St,Energy Efficiency,,,,1/15/2016,Active
+Home Energy Squad,Chisago,20297 Edward Blvd,,,Wade W ,Vitalis,,,,,20297 Edward Blvd,,Shafer,MN,55074,Residential,EE - 20297 Edward Blvd,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,12492 282nd St,,,Daniel R ,Wohlenhaus,,,,,12492 282nd St,,Lindstrom,MN,55045,Residential,EE - 12492 282nd St,Energy Efficiency,,,,12/15/2016,Complete
+Home Energy Squad,Chisago,31674 Mildred Ave,,,Adam,Wojtowicz,,,,,31674 Mildred Ave,,Lindstrom,MN,55045,Residential,EE - 31674 Mildred Ave,Energy Efficiency,,,,11/15/2016,Complete
+Home Energy Squad,Chisago,29622 295th Ln,,,Bryan ,Wood,,,,,29622 295th Ln,,Lindstrom,MN,55045,Residential,EE - 29622 295th Ln,Energy Efficiency,,,,1/15/2016,Active
+Home Energy Squad,Chisago,29950 Nathan Ct,,,Sheila ,Zenk,,,,,29950 Nathan Ct,,Lindstrom,MN,55045,Residential,EE - 29950 Nathan Ct,Energy Efficiency,,,,2/15/2016,Active
+Noble Conservation Solutions,Chisago,Veritas Chapel,,,Steven,Brooks,763-670-0793,sjbrooks@veritasclassical.org,,,34888 Kable Ave,,North Branch,MN,,nonprofit,EE - 34888 Kable Ave,Energy Efficiency,7/20/2016,,,,Active
+Noble Conservation Solutions,Chisago,Lake Area Bank,,,Sheryl,Campbell,651-257-1117,scampbell@lakeareabank.com,,Back-up - Randy Leiter - 651-260-7903 - rleither@lakeareabank.com,12790 1st Ave North,,Lindstrom,MN,,Commericial,EE - 12790 1st Ave North,Energy Efficiency,9/15/2016,12/28/2016,,,Active
+Noble Conservation Solutions,Chisago,"Napa Auto Parts
+",,,Brian,Dreckman,651-325-1103,nabpco@frontiernet.net,,,30689 Lincoln Rd,,Lindstrom,MN,,Commericial,EE - 30689 Lincoln Rd,Energy Efficiency,,,,,Active
+Noble Conservation Solutions,Chisago,MultiSource Manufacturing,,GM,Marlys,Dunne,651-257-9463,mdunne@multisourcemfg.com,,Al Kaari - 651-257-9463 - akaari@multisourcemfg.com,10489 Liberty Ln,,Chisago City,MN,,Commericial,EE - 10489 Liberty Ln,Energy Efficiency,8/26/2016,9/26/2016,,,Active
+Noble Conservation Solutions,Chisago,Branch Landscape,,,Eric ,Fustafson,651-208-1473,eric@branchland.com,,,7009 372nd Str,,North Branch,MN,,Commericial,EE - 7009 372nd Str,Energy Efficiency,7/20/2016,,,,Active
+Noble Conservation Solutions,Chisago,"Thrifty White Pharmacy
+",,,Mathew,Garrison,651-257-4074,mjgarrison88@gmail.com,,,30699 Lincoln Road,,Lindstrom,MN,55045,Commericial,EE - 30699 Lincoln Rd,Energy Efficiency,,,,,Active
+Noble Conservation Solutions,Chisago,Chisago County HRA-EDA,Chisago County HRA-EDA,Executive Director,Nancy,Hoffman,651-674-5664,nancy@chisagocounty.org,,,38883 7th Ave.,,North Branch,MN,55056,Public,EE - 38883 7th Ave.,Energy Efficiency,11/1/2016,12/14/2016,,,Active
+Noble Conservation Solutions,Chisago,"Al's Saloon
+",,,Alan ,Honn,612-242-4998,ableminds1@earthlink.net,,,325 Summit Ave,,Center City,MN,55012,Commericial,EE - 325 Summit Ave,Energy Efficiency,,,,,Active
+Noble Conservation Solutions,Chisago,Clubhouse Golf Grill,,,Todd,Kueppers,651-257-6024,tkueppers@chisagolakesgolf.com,,,12975 292nd Str,,Lindstrom,MN,,Commericial,EE - 12975 292nd Str,Energy Efficiency,7/21/2016,,,,Active
+Noble Conservation Solutions,Chisago,H& L Machine,,,Linda,Letourneau,651.257.6525,sales@hlmachine.com,,or Herb Letourneau,27380 Lofton Ave. ,,"Chisago City,",MN,,Residential,EE - 27380 Lofton Ave. ,Energy Efficiency,11/15/2016,,,,Active
+Noble Conservation Solutions,Chisago,City of Wyoming,City of Wyoming,Assistant City Administrator,Robb,Linwood,651-272-5501,,,,26885 Forest Blvd.,,Wyoming,MN,55092,Public,EE - 26885 Forest Blvd.,Energy Efficiency,,,,,Active
+Noble Conservation Solutions,Chisago,Printing Express,,,Mary,O'Reilly,651-257-4441,printingexp@gmail.com,,,301 Summit Ave,,Center City,MN,55012,Commericial,EE - 301 Summit Ave,Energy Efficiency,10/28/2016,12/28/2016,,,Active
+Noble Conservation Solutions,Chisago,City of Chisago City,Chisago City,City Administrator,John,Pechman,651-257-7634,jpechman@ci.chisago.mn.us,,,10625 Railroad Ave.,,Chisago City,MN,55013,Public,EE - 10625 Railroad Ave.,Energy Efficiency,11/1/2016,12/14/2016,,,Active
+Noble Conservation Solutions,Chisago,Trinity Lutheran Church,,,George,Popa,651-257-5129,gpopa@1017@gmail.com,,,13025 Newell Ave,,Lindstrom,MN,,nonprofit,EE - 13025 Newell Ave,Energy Efficiency,8/22/2016,10/11/2016,,,Active
+Noble Conservation Solutions,Chisago,Center City City Hall,Center City,City Clerk/Treasurer/Zoning Administrator,Terrie,Trudeau,651-257-5284,info@centercity.mn.us,,or Norma Anderson - City Clerk/Treasurer/Zoning Administrator - Center City,300 N. Center Ave,PO Box 245,Center City,MN,55012,Public,EE - 300 N. Center Ave,Energy Efficiency,,12/14/2016,,,Active
+Noble Conservation Solutions,Chisago,Lindstrom Chirpractic Center,,,Rob,Waddell,651-257-1103,contact@lindstromchiro.com,,,12099 Lindstrom Ln,,Lindstrom,MN,,Commericial,EE - 12099 Lindstrom Ln,Energy Efficiency,9/22/2016,11/2/2016,,12/28/2016,Active
+Noble Conservation Solutions,Chisago,"Grandstrand Funeral Home 
+",,,Tom,Wilson,651-257-4000,tom.wilson@grandstrandfh.com,,,11900 Lake Lane ,,Lindstrom,MN,,Commericial,EE - 11900 Lake Lane ,Energy Efficiency,,,,,Active

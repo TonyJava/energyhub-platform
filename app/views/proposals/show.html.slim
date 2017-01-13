@@ -21,6 +21,8 @@ h1= @project.name
             td Notes:
             td= @project.notes
 
+        = link_to 'Back to Project', project_path(id: @project.id)
+        '&nbsp;&nbsp;|
         = link_to 'Edit Project', edit_project_path(@project)
 
 .row
@@ -38,10 +40,10 @@ h1= @project.name
                   th Step 
                   th Completed
               tbody
-                - @proposal.proposal_steps.each do |proposal_step|
+                - @proposal.proposal_steps.order(:order).each do |proposal_step|
                   tr
                     td= proposal_step.name
-                    td= proposal_step.step_completed
+                    td= proposal_step.step_completed.to_formatted_s(:long) if proposal_step.step_completed
         table.table.table-bordered.table-striped
           tr
             td Proposal doc:

@@ -3,8 +3,8 @@ class PagesController < ApplicationController
 
   def home
     @hubs = Hub.all
-    @projects = Project.order(created_at: :desc)
-    @participants = Participant.order(created_at: :desc)
+    @projects = Project.order(created_at: :desc).take(6)
+    @participants = Participant.order(created_at: :desc).take(6)
   end
 
   def participant_confirmation
