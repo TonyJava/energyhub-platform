@@ -14,7 +14,7 @@ class LoadData
         participant = Participant.where(last_name: row['last_name']).first_or_initialize
         participant.hub_id = Hub.where(name: row['hub']).first.id
         participant.first_name = row['first_name']
-        participant.last_name = row['last_name']
+        participant.email = row['email']
         participant.phone = row['phone']
         participant.organization = (row['organization'])
         participant.title = row['title']
