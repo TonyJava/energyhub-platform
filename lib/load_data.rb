@@ -11,7 +11,7 @@ class LoadData
         hub = Hub.where(name: row['hub']).first_or_create
         puts "Updated info for hub #{hub.name}"
         # Add fields to a new participant
-        participant = Participant.where(email: row['email']).first_or_initialize
+        participant = Participant.where(last_name: row['last_name']).first_or_initialize
         participant.hub_id = Hub.where(name: row['hub']).first.id
         participant.first_name = row['first_name']
         participant.last_name = row['last_name']
